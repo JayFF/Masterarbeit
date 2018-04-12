@@ -1,0 +1,72 @@
+\documentclass{scrbook}
+\usepackage[ngerman, main=english]{babel}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{nicefrac}
+\usepackage[toc, page]{appendix}
+
+\usepackage{mathpazo}
+%\setsansfont{[futura_medium_bt.ttf]}
+%\setmainfont[
+% BoldFont={[Futura_Bold_font.ttf]}, 
+% ItalicFont={Futura_Light_Italic_font.ttf},
+% BoldItalicFont={[Futura_Bold_Italic_font.ttf]}
+% ]{[futura_light_bt.ttf]}
+\setmainfont[Numbers=OldStyle]{Linux Libertine O}
+\setkomafont{sectioning}{\scshape}
+\setkomafont{title}{\scshape}
+%\setkomafont{section}{\rmfamily}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[backend=biber,style=phys,sorting=none,natbib=true]{biblatex}
+\addbibresource{references.bib}
+\usepackage{remreset}
+
+\renewcommand{\autodot}{}
+
+\title{Fancy Masterarbeit of Death}
+\author{Jonathan Förste}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Introduction}
+\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
+	\section{Crystal structure and symmetries}
+	\section{Electronic bandstructure}
+	\section{Excitons in \textsc{tmd}s}
+		\subsection{Binding energy and recombination}
+		\subsection{Phonons and dark states}
+		\subsection{Trions}
+	\section{The Valley Zeeman Effect}
+	\section{Bilayer WSe$_2$}
+\chapter{Fabrication of field effect structures}
+	\section{Mechanical exoliation}
+		\subsection{Layer number}
+	\section{Hexagonal boron nitide}
+	\section{Electrode fabrication}
+		\subsection{UV lithography}
+		\subsection{Backgate and contacting}
+	\section{Hot pickup and stamping}
+	\section{Annealing}
+\chapter{Experimental results}
+	\section{Optical setup}
+		\subsection{Photoluminescence spectroscopy}
+		\subsection{Absorption spectroscopy}
+	\section{Sample characterization}
+		\subsection{Electrical properties}
+		\subsection{Narrow linewidth}
+	\section{Gate sweep in magnetic field}
+
+\begin{appendices}
+\chapter{Lineshapes and fitting procedures}
+\end{appendices}
+
+\end{document}
