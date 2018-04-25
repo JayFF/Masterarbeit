@@ -9,6 +9,20 @@
 \usepackage{cleveref}
 \usepackage{nicefrac}
 \usepackage[toc, page]{appendix}
+\usepackage{subcaption}
+\usepackage{caption}
+\captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+ \renewcommand{\thesubfigure}{\Alph{subfigure}}
+\usepackage{scalerel}
+
+\newcommand{\hbn}{{\footnotesize h}\textsc{bn}}
+\newcommand{\tmd}{\textsc{tmd}}
+\newcommand{\tmdg}{\textsc{tmd}\ }
+\newcommand{\tmds}{\textsc{tmd}s\ }
+\newcommand{\pdms}{\textsc{pdms}}
+\newcommand{\ppc}{\textsc{ppc}}
+\newcommand{\si}{\textsc{s}{\footnotesize i}}
+\newcommand{\sio}{\textsc{s}{\footnotesize i}\textsc{o}$_{\scaleto{2}{4pt}}$\ }
 
 \usepackage{mathpazo}
 %\setsansfont{[futura_medium_bt.ttf]}
@@ -48,14 +62,7 @@
 	\section{The Valley Zeeman Effect}
 	\section{Bilayer WSe$_2$}
 \chapter{Fabrication of field effect structures}
-	\section{Mechanical exoliation}
-		\subsection{Layer number}
-	\section{Hexagonal boron nitide}
-	\section{Electrode fabrication}
-		\subsection{UV lithography}
-		\subsection{Backgate and contacting}
-	\section{Hot pickup and stamping}
-	\section{Annealing}
+	\input{Exfoliation.tex}
 \chapter{Experimental methods and results}
 	\section{Optical setup}
 		\subsection{Photoluminescence spectroscopy}
