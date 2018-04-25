@@ -4,15 +4,28 @@ The fabrication of a functioning field effect structure of \tmdg mono- or bilaye
 \begin{figure}
 \centering
 \begin{subfigure}{0.4\textwidth}
-	\includegraphics[width=\textwidth]{flakes.jpg}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{flakes.jpg}};
+	\node at (80pt, 30pt) {{\large \textbf{ML/BL}}};
+	\draw (20pt, 20pt) -- (60pt, 20pt);
+	\node at (40pt, 12pt) {\textbf{100\mu m}};
+	\end{tikzpicture}
 \end{subfigure}
 \begin{subfigure}{0.349\textwidth}
-	\includegraphics[width=\textwidth]{mono_on_sio2.jpg}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{mono_on_sio2.jpg}};
+	\node at (40pt, 80pt) {{\large \textbf{ML}}};
+	\node at (65pt, 55pt) {{\large \textbf{BL}}};
+	\draw (20pt, 20pt) -- (60pt, 20pt);
+	\node at (39pt, 12pt) {\textbf{10\mu m}};
+	\end{tikzpicture}
 \end{subfigure}
-\caption{\textbf{Left:} During the exfoliation process a lot of flakes of different size and thickness are scattered over the substrate. Interesting specimen have to be searched for by hand. \textbf{Right:} Flake consting of mono- and bilayer regions that can be identified by their optical contrast.}
+\caption{\textbf{A} During the exfoliation process a lot of flakes of different size and thickness are scattered over the substrate. Interesting specimen have to be searched for by hand. \textbf{B} Flake consting of mono- and bilayer regions that can be identified by their optical contrast.}
 	\label{flakes}
 \end{figure}
-Thin films of layered materials like \tmd's, like many natomaterials, can be fabricated using a top-down or bottom-up approach. The bottom-up approach for these particular materials is called chemical-vapor deposition (CVD) (Reference). Because of its scalability it is the leading candidate that could be used in an industrial fabrication pipeline. However, the top-down approach of mechanical exfoliatioin (Refernence) has become the first choice for a lot of projects to build high quality model systems, that can be used to study physics in low dimensions. The reason is the so far supperior quality of few-layer flakes in terms of defects and contaminants as well as the synergy with dry transfer methods(Reference(Laterchapter)). 
+Thin films of layered materials like \tmd's, like many natomaterials, can be fabricated using a top-down or bottom-up approach. The bottom-up approach for these particular materials is called chemical-vapor deposition (\textsc{cvd}) (Reference). Because of its scalability it is the leading candidate that could be used in an industrial fabrication pipeline. However, the top-down approach of mechanical exfoliatioin (Refernence) has become the first choice for a lot of projects to build high quality model systems, that can be used to study physics in low dimensions. The reason is the so far supperior quality of few-layer flakes in terms of defects and contaminants as well as the synergy with dry transfer methods(Reference(Laterchapter)). 
 
 The mechanical exfoliation process -- oftern referred to as the ``scotch tape method'' -- is based on the fact, that the van-der-Waals forces between adjacent layers in \tmd's are much weaker, than the lateral covalent bonds inside them. In fact, they are weak enough, that they can be easily broken appart by adhesive tape.
 
@@ -22,15 +35,25 @@ To prepare monolayer flakes for the assembly of more complex devices, they first
 
 \subsection{Layer number}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\begin{subfigure}{0.4\textwidth}
-	\adjincludegraphics[trim={0 0 0 0}, width=\textwidth, clip]{Monolayer_Microscope.png}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\adjincludegraphics[trim={{.25\width} {.35\height} {.25\width} 0}, width=\textwidth, clip]{other_mono_bi.jpg}};
+	\node at (80pt, 60pt) {{\large \textbf{ML}}};
+	\node at (80pt, 150pt) {{\large \textbf{BL}}};
+	\end{tikzpicture}
 	\end{subfigure}
 	\begin{subfigure}{0.4\textwidth}
-	\adjincludegraphics[trim={0 0 0 0}, width=\textwidth, clip]{other_mono_bi_PL.png}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\adjincludegraphics[trim={ {.15\height} 0 {.1\height} 0}, width=.978\textwidth, clip, angle=90]{PL_imaging.png}};
+	\node at (45pt, 45pt) {{\large \textbf{ML}}};
+	\node at (100pt, 150pt) {\textcolor{white}{{\large \textbf{BL}}}};
+	\end{tikzpicture}
 	\end{subfigure}
-	\caption{Comparison of mono- and bilayers of WSe$_2$. \textbf{a} The reflectance contrast of mono- and bilayers can be used to measure the layer number. The difference is however small enough to misidentify them under changing or inhomogenious lighting conditions. \textbf{b} The monolayer shows much higher \textsc{pl}-intensity than the bilayer and can therefore be identified very easily.}
+	\caption{Comparison of mono- and bilayers of WSe$_2$. \textbf{A} The reflectance contrast of mono- and bilayers can be used to measure the layer number. The difference is however small enough to misidentify them under changing or inhomogenious lighting conditions. \textbf{B} The monolayer shows much higher \textsc{pl}-intensity than the bilayer and can therefore be identified very easily.}
 	\label{pl-contrast}
 \end{figure}
 
@@ -52,12 +75,20 @@ The goal of this thesis was, to fabricate high quality \tmd-monolayer samples th
 \centering
 \begin{subfigure}{0.4\textwidth}
 	\caption{}
-	\includegraphics[width=\textwidth]{lithography.jpg}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {	\includegraphics[width=\textwidth]{lithography.jpg}};
+	\draw (20pt, 20pt) -- (60pt, 20pt);
+	\node at (40pt, 12pt) {\textbf{100\mu m}};
+	\end{tikzpicture}
 
 \end{subfigure}
 \begin{subfigure}{0.4\textwidth}
 	\caption{}
-	\includegraphics[width=\textwidth]{full_device.jpg}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {	\includegraphics[width=\textwidth]{full_device.jpg}};
+	\draw (120pt, 20pt) -- (160pt, 20pt);
+	\node at (140pt, 12pt) {\textbf{100\mu m}};
+	\end{tikzpicture}
 \end{subfigure}
 \caption{\textbf{A} Electrodes are written onto the substrate prior to the assembly of the \hbn-\tmdg heterostructure. A preused chromium mask of an interdigital structure is used for the gold pattern. \textbf{B} As long the heterostructure is dropped in contact with a thick line of the gold pattern, minor defects in the electrode structure do not affect the functionality of the device.}
 	\label{pattern}
@@ -89,11 +120,11 @@ The requirement to sandwitch samples in \hbn opened up the possibility of using 
 
 The method used for this work is called ``hot pick-up and stamping'' (Reference). The stamp used in this process is a block of \textsc{pdms}, mounted on a glass slide with transparent adhesive tape. This block is spin-coated with a polymer polypropylene carbonate (\textsc{ppc}). To make sure, that the polar \textsc{ppc} sticks to the stamp while being heated to high temperatures it is treated in oxygen plasma for at least 20 minutes before the spin coating.
 
-The \tmd-flake is exfoliated on a Si/SiO$_2$ substrate and so are suitible bottom and top \hbn flakes. The primary criteria for finding the right \hbn-flakes is the flattness of its surface, so that the \tmd-flake can be encapsulated between two large terasses without cracks or steps. To allow a fast fabrication process, this flattness is only judged with help of an optical microscope. More sophisticated methods like atomic force microscopy can be used to verify the flattness more accurately, however this not only extends the fabrication process but does not help determining the quality of the top \hbn flake, since its interface is facing down after being exfoliated on the parent substrate.
+The \tmd-flake is exfoliated on a \si/\sio substrate and so are suitible bottom and top \hbn flakes. The primary criteria for finding the right \hbn-flakes is the flattness of its surface, so that the \tmd-flake can be encapsulated between two large terasses without cracks or steps. To allow a fast fabrication process, this flattness is only judged with help of an optical microscope. More sophisticated methods like atomic force microscopy can be used to verify the flattness more accurately, however this not only extends the fabrication process but does not help determining the quality of the top \hbn flake, since its interface is facing down after being exfoliated on the parent substrate.
 
 The goal of the hot pick-up is now to use a hot-plate to control the van-der-Waals forces between \hbn, \tmds and the substrate to ensure adhesion between the parts of the heterostructure as well as to reduce contamination with water molecules from the ambient air.
 
-After all precursors are prepared on Si/SiO$_2$ substrates, the actual pick-up and stamping process can be carried out. The fabrication setup can be seen in (Figure whatever). The first step is the pick-up of the top \hbn flake. At 40°C the van-der-Waals forces between \hbn and \textsc{ppc} are already strong enough to lift the flake off the silicon substrate. In the next step the \hbn is dropped dropped on the \tmd-flake. To make the interface as clean as possible the temperature for this drop is raised to 110°C. This ensures a stronger van-der-Waals force between \hbn and TMD than between TMD and silicon-dioxide but more importantly contamination through droplets of water from the ambient air is minimized above its boiling point and other contaminants are more mobile as well. By slowly pressing the stamp against the substrate, this dirt can leave the interface of the two flakes and fewer blisters form(hotpickuppaper). The stack of TMD and \hbn can then be picked up again following the same procedure that was used for the bare \hbn flake. Afterwards it is dropped down on the bottom \hbn flake. To contact the TMD flake to gold part of it has to remain outside the \hbn encapsulation. This part does not necessarily have to be a monolayer but can also be any form of TMD, that is in contact with it so charges can be transported. The \hbn on the other hand is elastic enough so that thicker material does not affect the encapsulation of mono- or bilayer regions.
+After all precursors are prepared on \si/\sio substrates, the actual pick-up and stamping process can be carried out. The fabrication setup can be seen in (Figure whatever). The first step is the pick-up of the top \hbng flake. At 40°C the van-der-Waals forces between \hbng and \textsc{ppc} are already strong enough to lift the flake off the silicon substrate. In the next step the \hbng is dropped dropped on the \tmd-flake. To make the interface as clean as possible the temperature for this drop is raised to 110°C. This ensures a stronger van-der-Waals force between \hbng and \tmdg than between \tmdg and silicon-dioxide but more importantly contamination through droplets of water from the ambient air is minimized above its boiling point and other contaminants are more mobile as well. By slowly pressing the stamp against the substrate, this dirt can leave the interface of the two flakes and fewer blisters form(hotpickuppaper). The stack of \tmdg and \hbng can then be picked up again following the same procedure that was used for the bare \hbng flake. Afterwards it is dropped down on the bottom \hbng flake. To contact the \tmdg flake to gold part of it has to remain outside the \hbng encapsulation. This part does not necessarily have to be a monolayer but can also be any form of \tmdg, that is in contact with it so charges can be transported. The \hbng on the other hand is elastic enough so that thicker material does not affect the encapsulation of mono- or bilayer regions.
 
 The last step is to transfer the whole stack to its final position in contact with the electrodes. This is accomplished by repeating the pick-up process once again and dropping the stack in contact with the gold structure.
 
@@ -101,6 +132,6 @@ Despite the strong plasma treatment of the \textsc{pdms}-stamp in some cases the
 
 \subsection{Annealing}
 
-While the hot pick-up should in theory ensure a \hbn-TMD interface free of contamination, especially contamination due to humidity in the ambient air can remain between the layers and seriously lower the quality of the sample. To remove this pollution, the sample can be annealed(Referenz). During annealing, the sample is placed in an annealing oven. While maintaining a high vacuum of 10$^{-3}$ mbar, the oven heats the sample up to 250°C for around three hours. Other recipes, that use higher or lower temperatures or longer annealing times can work just as well as long as they ensure the complete evaporation ov residual water. 
+While the hot pick-up should in theory ensure a \hbn-\tmdg interface free of contamination, especially contamination due to humidity in the ambient air can remain between the layers and seriously lower the quality of the sample. To remove this pollution, the sample can be annealed(Referenz). During annealing, the sample is placed in an annealing oven. While maintaining a high vacuum of 10$^{-3}$ mbar, the oven heats the sample up to 250°C for around three hours. Other recipes, that use higher or lower temperatures or longer annealing times can work just as well as long as they ensure the complete evaporation ov residual water. 
 
 Different groups report different recipes for this procedure(Referenzen). During the hot pick-up method the \tmd-flakes are never in contact with anything but ambient air and cleanly cleaved \hbn-interfaces. More aggressive recipes, that work at higher temperatures or for longer times to remove also contaminations that arise from the stamp therefore have a limited advantage over milder annealing conditions.
