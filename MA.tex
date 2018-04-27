@@ -17,6 +17,10 @@
 \captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
  \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \usepackage{scalerel}
+\newcommand{\myequation}{\begin{equation}}
+\newcommand{\myendequation}{\end{equation}}
+\let\[\myequation
+\let\]\myendequation
 
 \newcommand{\hbn}{{\footnotesize h}\textsc{bn}}
 \newcommand{\hbng}{{\footnotesize h}\textsc{bn}\ }
@@ -71,7 +75,8 @@
 	\section{Bilayer WSe$_2$}
 \chapter{Fabrication of field effect structures}
 	\input{Exfoliation.tex}
-\chapter{Experimental methods and results}
+%\chapter{Experimental methods and results}
+\input{experiment.tex}
 	\section{Optical setup}
 		\subsection{Photoluminescence spectroscopy}
 		\subsection{Absorption spectroscopy}
