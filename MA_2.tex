@@ -1,0 +1,94 @@
+\documentclass{scrbook}
+\usepackage[ngerman, main=english]{babel}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cleveref}kit_compile
+\usepackage{nicefrac}
+\usepackage[toc, page]{appendix}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage[export]{adjustbox}
+\usepackage{pict2e}
+\usepackage{tikz}
+\captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+ \renewcommand{\thesubfigure}{\Alph{subfigure}}
+\usepackage{scalerel}
+\newcommand{\myequation}{\begin{equation}}
+\newcommand{\myendequation}{\end{equation}}
+\let\[\myequation
+\let\]\myendequation
+
+\newcommand{\hbn}{{\footnotesize h}\textsc{bn}}
+\newcommand{\hbng}{{\footnotesize h}\textsc{bn}\ }
+\newcommand{\tmd}{\textsc{tmd}}
+\newcommand{\tmdg}{\textsc{tmd}\ }
+\newcommand{\tmds}{\textsc{tmd}s\ }
+\newcommand{\pdms}{\textsc{pdms}}
+\newcommand{\ppc}{\textsc{ppc}}
+\newcommand{\si}{\textsc{s}{\footnotesize i}}
+\newcommand{\sio}{\textsc{s}{\footnotesize i}\textsc{o}$_{\scaleto{2}{4pt}}$\ }
+\newcommand{\ws}{\textsc{w}\textsc{s}$_{\scaleto{2}{4pt}}$\ }
+\newcommand{\wse}{\textsc{w}\textsc{s}{\footnotesize e}$_{\scaleto{2}{4pt}}$\ }
+\newcommand{\pl}{\textsc{pl}\ }
+
+
+\usepackage{mathpazo}
+%\setsansfont{[futura_medium_bt.ttf]}
+%\setmainfont[
+% BoldFont={[Futura_Bold_font.ttf]}, 
+% ItalicFont={Futura_Light_Italic_font.ttf},
+% BoldItalicFont={[Futura_Bold_Italic_font.ttf]}
+% ]{[futura_light_bt.ttf]}
+\setmainfont[Numbers=OldStyle]{Linux Libertine O}
+\setkomafont{sectioning}{\scshape}
+\setkomafont{title}{\scshape}
+%\setkomafont{section}{\rmfamily}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[backend=biber,style=phys,sorting=none,natbib=true]{biblatex}
+\addbibresource{references.bib}
+\usepackage{remreset}
+
+\renewcommand{\autodot}{}
+
+\title{Fancy Masterarbeit of Death}
+\author{Jonathan Förste}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Introduction}
+\input{theory}
+%\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
+	\section{Crystal structure and symmetries}
+	\section{Electronic bandstructure and spin orbit coupling}
+	\section{Excitons in \textsc{tmd}s}
+		\subsection{Binding energy}
+		\subsection{Phonons and dark states}
+		\subsection{Trions}
+	\section{The Valley Zeeman Effect}
+	\section{Bilayer WSe$_2$}
+\chapter{Fabrication of field effect structures}
+	\input{Exfoliation.tex}
+%\chapter{Experimental methods and results}
+\input{experiment.tex}
+	\section{Optical setup}
+		\subsection{Photoluminescence spectroscopy}
+		\subsection{Absorption spectroscopy}
+	\section{Sample characterization}
+		\subsection{Electrical properties}
+		\subsection{Narrow linewidth}
+	\section{Gate sweep in magnetic field \# full control}
+		\subsection{Doping regimes}
+		\subsection{g-factors}
+
+\begin{appendices}
+\end{appendices}
+
+\end{document}

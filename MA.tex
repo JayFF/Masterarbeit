@@ -6,7 +6,7 @@
 \usepackage{amssymb}
 \usepackage{float}
 \usepackage{hyperref}
-\usepackage{cleveref}
+\usepackage{cleveref}%kit_compile
 \usepackage{nicefrac}
 \usepackage[toc, page]{appendix}
 \usepackage{subcaption}
@@ -14,6 +14,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{pict2e}
 \usepackage{tikz}
+\usepackage[european]{circuitikz}
 \captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
  \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \usepackage{scalerel}
@@ -33,6 +34,7 @@
 \newcommand{\sio}{\textsc{s}{\footnotesize i}\textsc{o}$_{\scaleto{2}{4pt}}$\ }
 \newcommand{\ws}{\textsc{w}\textsc{s}$_{\scaleto{2}{4pt}}$\ }
 \newcommand{\wse}{\textsc{w}\textsc{s}{\footnotesize e}$_{\scaleto{2}{4pt}}$\ }
+\newcommand{\pl}{\textsc{pl}\ }
 
 
 \usepackage{mathpazo}
@@ -77,20 +79,8 @@
 	\input{Exfoliation.tex}
 %\chapter{Experimental methods and results}
 \input{experiment.tex}
-	\section{Optical setup}
-		\subsection{Photoluminescence spectroscopy}
-		\subsection{Absorption spectroscopy}
-	\section{Sample characterization}
-		\subsection{Electrical properties}
-		\subsection{Narrow linewidth}
-	\section{Gate sweep in magnetic field \# full control}
-		\subsection{Doping regimes}
-		\subsection{g-factors}
 
-\begin{appendices}
-\chapter{Lineshapes and fitting procedures}
-	\section{Asymmetric Lorentzian}
-	\section{Fano Resonance Lineshape}
-\end{appendices}
+%\begin{appendices}
+%\end{appendices}
 
 \end{document}
