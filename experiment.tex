@@ -52,6 +52,12 @@ The quality of the dielectric is quantified by measuring the capacity of the dev
 		\node at (7.5,4.7) {$77.1$Hz};
 		\node at (6.15,2) {Topgate};
 		\node at (9,2) {Backgate};
+		\draw (-0.4,5.5) -- (-0.4,7) -- (2.2,7) -- (2.2,5.5) -- (-0.4,5.5);
+		\draw (4.6,5.5) -- (4.6,7) -- (7.4,7) -- (7.4,5.5) -- (4.6,5.5);
+		\draw (7.6,5.5) -- (7.6,7) -- (10.4,7) -- (10.4,5.5) -- (7.6,5.5);
+		\node[align=left] at (1,6.5) {DC-Voltage\\source};
+		\node[align=left] at (6.1,6.5) {AC-function\\generator};
+		\node[align=left] at (8.9,6.5) {Lock-in\\amplifier};
 	\end{circuitikz}
 
 	\end{tikzpicture}
@@ -59,9 +65,9 @@ The quality of the dielectric is quantified by measuring the capacity of the dev
 	\caption{This is bullshit}
 \end{figure}
 
-\section{Spectroscopy of \wse gate devices}
+\chapter{Spectroscopy of \wse gate devices}
 
-The goal of this thesis was to advance tools that can help understanding the optical spectra of \tmdg monolayers. The fabrication tools have been discussed in the previous chapter. In this chapter the experimental tools and results will be discussed in more detail. The gate electrodes will be used to tune the charge density inside the sample and the sample itself will be placed in a homogenious magnetic field. All of these techniques have the goal of providing additional dimensions along one can influence the spectrum to find the underlying physical processes, that lie at the root of the individual features.
+The goal of this thesis was to advance tools that can help understanding the optical spectra of \tmdg monolayers. The fabrication tools have been discussed in the previous chapters. In this chapter the experimental tools and results will be discussed in more detail. The gate electrodes will be used to tune the charge density inside the sample and the sample itself will be placed in a homogenious magnetic field. All of these techniques have the goal of providing additional dimensions along one can influence the spectrum to find the underlying physical processes, that lie at the root of the individual features.
 
 Tungsten-based \tmds are of particular interest, because their more complex band-structure that yields a rich spectrum. The following measurements are all performed on a sample of tungsten-diselenide (\wse\!).
 
@@ -75,21 +81,21 @@ Tungsten-based \tmds are of particular interest, because their more complex band
 		\includegraphics[height=0.65\textwidth]{Voltsweep}
 	\end{subfigure}
 	\caption{Photoluminescence of \wse at different doping levels. \textbf{A} Spectra in the neutral and negatively charged regime. The \pl of the exciton (X) is clearly visible at the blue end of the spectrum. The replica peaks (R$_1$, R$_2$) correspond to phonon sidebands of momentum indirect excitons. In a negtively charged regime, they vanish in favor of redshifted peaks, that correspond to the trion (X$^-$) with its carracteristic splitting and its momentum indirect counterparts. \textbf{B} Spectral features in a gate-sweep. The plot can be devided into a neutral and charged regime below and above 5V. This threshold is a signature of unintentional n-doping and varies across the sample.}\label{plspectrum}
-\end{figure}
+\end{figure} 
 
 \begin{figure}[h]
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
-		\includegraphics[height=0.65\textwidth]{RF_neut_neg_pure}
+		\includegraphics[height=0.65\textwidth]{RF_neut_neg_pure}\label{rfspectrum}
 	\end{subfigure}
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
 		\includegraphics[height=0.65\textwidth]{RF_Voltsweep}
 	\end{subfigure}
-	\caption{Reflection of \wse at different doping levels. \textbf{A} The reflection spectrum of \wse in a neutral and negatively charged regime. The neutral spectrum shows a strong response, corresponding to the main exciton resonance (X). The absorption of the exciton almost vanishes in the charged spectrum and a double dip appears, that corresponds to the trion resonance, resolving the typical exchange splitting (X$^-$). \textbf{B} Reflection spectra at different voltages. The exciton absorption shows a similar response as in \pl, however stretched to lower voltages. The absorption at the trion resonance can be resolved much better, than the corresponding peaks in \pl. }\label{frspectrum}
+	\caption{Reflection of \wse at different doping levels. \textbf{A} The reflection spectrum of \wse in a neutral and negatively charged regime. The neutral spectrum shows a strong response, corresponding to the main exciton resonance (X). The absorption of the exciton almost vanishes in the charged spectrum and a double dip appears, that corresponds to the trion resonance, resolving the typical exchange splitting (X$^-$). \textbf{B} Reflection spectra at different voltages. The exciton absorption shows a similar response as in \pl, however stretched to lower voltages. The absorption at the trion resonance can be resolved much better, than the corresponding peaks in \pl. }\label{rfspectrum}
 \end{figure}
 
-\subsection{Modelling peak shapes}
+\section{Modelling peak shapes}
 
 \begin{figure}[h]
 	\begin{subfigure}{0.49\textwidth}
@@ -112,7 +118,7 @@ where $I$ is the intensity, \epsilon is the reduced energy, composed of the ener
 \begin{equation} \gamma = \frac{2\gamma_0}{1+e^{k(\nu-\nu_0)}}\label{asymlorentz} \end{equation}
 This value is then insterted into \eqref{lorentz}. The symmetry parameter $k$ scales the steepness of the s-cuve sigmoid function and thus the skeewedness of the lineshape. The $\gamma_0$ parameter is identical to $\gamma$ at $\nu_0$ and corresponds to the peaks linewidth. For $k=0$ \eqref{lorentz} collapses to unity and the standard lorentz lineshape is recovered. The asymmetric lorentzian can be used to model all peaks in the \pl spectrum.
 
-In reflection spectroscopy, the signal should correspond to the absorption of the sample. Therefore the straight foreward way to model features would base on a lorentzian function as well, only with a negative sign\footnote{The sign of the fitting functions depends on the definition of the spectrum itself. In this work, the background is substracted from the signal, yielding the reflection off the flake. A flipped sign on the other hand corresponds to the absorption.}. However, the real reflection spectrum is more complicated due to multiple possible effects, not covered by this thesis (see Figure \ref{rfspectrum}). The trion signal in the charged spectrum shows a double dip. This can be modelled by simply adding two negative asymmetric lorentzians and compensating for the positive offset with an additional constant parameter simply added to the function. The main exciton resonance however has a highly asymmetric lineshape, that cannot be modelled with a bare lorentzian (either \eqref{lorentz} or \eqref{asymlorentz}). A more general function is a so called fano resonace. The physical background is the interference between a resonance and a continuous background(referenz fano paper/wiki). 
+In reflection spectroscopy, the signal should correspond to the absorption of the sample. Therefore the straight foreward way to model features would base on a lorentzian function as well, only with a negative sign\footnote{The sign of the fitting functions depends on the definition of the spectrum itself. In this work, the background is substracted from the signal, yielding the reflection off the flake. A flipped sign on the other hand corresponds to the absorption.}. However, the real reflection spectrum is more complicated due to multiple possible effects, not covered by this thesis (see Figure \ref{rfspectrum}). The trion signal in the charged spectrum shows a double dip. This can be modelled by simply adding two negative asymmetric lorentzians and compensating for the positive offset with an additional constant parameter simply added to the function. The main exciton resonance however has a highly asymmetric lineshape, that cannot be modelled with a bare lorentzian (either \eqref{lorentz} or \eqref{asymlorentz}). A more general function is a so called fano resonace. The physical background is the interference between a resonance and a continuous background\cite{fano_effects_1961}. 
 \begin{equation}
 \frac{(q+\epsilon)^2}{(1+\epsilon^2)} = 1 + \frac{q^2+2q\epsilon-1}{1+\epsilon^2}\label{fano}
 \end{equation}
@@ -121,7 +127,7 @@ Examples of the fitting process for reflection and \pl spectra can be seen in fi
 
 Besides quantifying the sample quality via the linewidth parameter, the described fitting procedures were extensively used in the next section to find peak positions at different doping levels and different magnetic fields.
 
-\subsection{Measuring the valley zeeman effect at different doping levels}
+\section{Measuring the valley zeeman effect at different doping levels}
 
 A functioning gate-tunable device is an ideal base to study different features of \tmds in different doping regimes. The narrow linewidths of clean, \hbng encapsulated \wse samples also allows for the precise quantification of the valley zeeman effect (see theory section), acting on the different states, that make up the \pl and reflection spectra. Using the fitting procedures of the previous section, all features can be quantified in terms of position, linewidth and intensity.
 
