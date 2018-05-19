@@ -1,103 +1,30 @@
-\chapter{Sample characterization}
+\chapter{Spectroscopy of ws\textup{e}$_2$ gate devices}\label{spectroscopy}
 
-There are two dimensions to characterize the quality of a sample. Its optical properties must include narrow linewidths, to identify different features of the spectrum and it has to be gate-tunable, which means the contact of \tmdg flake to the electrode as well as the backgate have to function and the \sio layer has to sustain enough voltage to tune in and out of neutral and charged regimes.
+The goal of this thesis was to advance tools that can help understanding the optical spectra of \tmdg monolayers. In this chapter the experimental tools and results will be discussed in more detail. The narrow linewidth of the spectral features due to \hbng encapsulation enables the possibility of analyzing the lines of the optical spectrum individually. This is accomplished by tracking their position and shape though different charge densities and magnetic field strengths. The measurements, discussed in the coming chapter are all performed on a sample of tungsten-dislenide (\wse\!). Tungsten-based \tmds are of particular interest, because their complex band-structure yields a rich spectrum, that is still poorly understood.
 
 \section{Optical setup}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.8\textwidth]{OptischerAufbau.png}
-	\caption{Optical setup for confocal spectroscopy: Light from a \textbf{laser}-source is guided to the setup in a single mode opical fibre and collimated. To cut off raman-modes, that are created in the fibre a \textbf{shortpass} filter is installed behind the collimator. A \textbf{linear polarizer} defines a polarization axis. A \textbf{beam-sampler} is reflecting the excitation beam into a \textbf{low temperature apochromat}, whose focus lies on the sample, with a spotsize of \textasciitilde\- 0.5\mu m. The sample is mounted on a \textbf{piezo nanopositioner}, that is placed inside a \textbf{cryostat} at a temperature of up to 3.1 K or in a container of liquid helium at 4.2 K. The cryostat is equipped with a \textbf{superconducting magnet} that can supply a homogenious magnetic field up to 9T. The sample electrodes are connected to a \textbf{voltage source} (Yokogawa) that supplies {\small$\pm$}32V. The detection spot is identical with the excitation. The reflection or photoluminescence is collimated again in the objective and passes through a \sigma$^+$/\sigma$^-$-analyzer consisting of a \textbf{quarter waveplate} and a \textbf{linear polarizer}, before being focussed in the detection fibre that connects to a \textbf{spectrometer}. A \textbf{camera} can be used to monitor the spot and image the sample, if it is brought out of focus.}
+	\caption{Optical setup for confocal spectroscopy: Light from a \textbf{laser}-source is guided to the setup in a single mode opical fibre and collimated. To cut off raman-modes, that are created in the fibre a \textbf{shortpass} filter is installed behind the collimator. A \textbf{linear polarizer} defines a polarization axis. A \textbf{beam-sampler} is reflecting the excitation beam into a \textbf{low temperature apochromat}, whose focus lies on the sample, with a spotsize of \textasciitilde\- 0.5\mu m. The sample is mounted on a \textbf{piezo nanopositioner}, that is placed inside a \textbf{cryostat} at a temperature of up to 3.1 K or in a container of liquid helium at 4.2 K. The cryostat is equipped with a \textbf{superconducting magnet} that can supply a homogenious magnetic field up to 9 T. The sample electrodes are connected to a \textbf{voltage source} (Yokogawa) that supplies {\small$\pm$}32V. The detection spot is identical with the excitation. The reflection or photoluminescence is collimated again in the objective and passes through a $\sigma^-$/$\sigma^+$--analyzer consisting of a \textbf{quarter waveplate} and a \textbf{linear polarizer}, before being focussed in the detection fibre that connects to a \textbf{spectrometer}. A \textbf{camera} can be used to monitor the spot and image the sample, if it is brought out of focus.}
 	\label{opticalsetup}
 \end{figure}
 
-The optical setup is a confocal microscope. In contrast to a ``conventional'' microscope, the sample is placed in the focal plane of a low temperature objective. The focal point is the same for excitation of the sample and the detection of the reflection or photoluminescence signal, hence the name. A scheme of the complete setup can be seen in Figure \ref{opticalsetup}. The excitation beam from a laser is guided to the so called excitation arm with a single mode optical fibre. It passes though a linear plolarizer to define a polarization axis and is reflected to the objective by a beam-sampler. To analyze the mostly circularly polarized light of the detection beam, it passes through a quarter waveplate and another linear polarizer and is focussed into another optical fibre, that is connected to a spectrometer. The sample is mounted on a piezo nanopositioner inside a cryostat or can of liquid helium and connected to a voltage source, to tune the charge density in the \tmdg flake. A strong, homogenious magnetic field can be supplied by a superconducting magnet.
+The optical setup is a confocal microscope. This means that the sample is placed in the focal plane of a low temperature objective and insteat of capturing a wide field image of the sample only the signal from the focal point is collected. The advantage is a high spatial resolution as well as a superior ratio between excitation power and collected signal, which is an important factor for spectroscopy as signal to noise ratio as well as integration time are critical factors in an experiment in which many spectra have to be recorded. A diagram of the complete setup can be seen in figure \ref{opticalsetup}. The excitation beam from a laser is guided to the so called excitation arm with a single mode optical fibre. It passes though a linear plolarizer to define a polarization axis and is reflected to the objective by a beam-sampler. To analyze circular dichroism in the detected beam, it passes through a quarter waveplate and another linear polarizer before being coupled into another optical fibre, that is connected to a spectrometer. The sample is mounted on a piezo nanopositioner inside a cryostat or container of liquid helium and connected to a voltage source, to tune the charge density in the \tmdg flake. A strong, homogenious magnetic field along the $z$-axis of the sample can be supplied by a superconducting magnet.
 
-For photoluminescence spectroscopy, the sample is excited with a laserbeam with a narrow frequency profile and a higher intensity. Because this beam has a much higher intensity, than the collected \textsc{pl} it is tuned to a higher frequency than the main exiton resonance. A shortpass filter in the excitation arm makes sure, no raman modes from the optical fibre pollute the spectrum. A longpass filter, right before the optical fibre of the detection arm blocks the laser, so that only \textsc{pl} reaches the spectrometer. To optain a reflection spectrum, these filters are omitted. Instead, the sample is illuminated with a broad band light source at a low power. To find the signal, a background spectrum, recorded in absence of the \tmdg flake is substracted from the main spectrum.
+For \pl spectroscopy, the sample is excited by a laser beam with a narrow frequency profile and high power. Because this beam has a much higher intensity, than the collected \textsc{pl} it is tuned to a higher frequency than the main exciton resonance, to obtain a complete spectrum without features from the excitation beam. To avoid stray light inside the spectrometer a longpass filter additionally blocks the laser before entering the detection fiber. A shortpass filter in the excitation arm blocks Raman modes of the optical fiber, a result from high excitation power, that can have frequencies overlapping with the \pl of the sample. 
+When the setup is operated for reflection spectroscopy these filters are omitted. Instead, the sample is illuminated with a broad band white light source at a low power. To find the signal, a background spectrum, recorded in absence of the \tmdg flake is substracted from the main spectrum.
 
 \[ 
 	S_R = \frac{\Delta R}{R} = \frac{R_{\mathrm{flake}} - R_{\mathrm{background}}}{R_{\mathrm{background}}}
 \]
 
-The signal $S_R$ is the difference of the Reflection signals of \tmdg flake and background. The devision by the background reflection is made to normalize the signal. The resulting reflection spectrum should show only features, of the flake. In practice, the obtained data has to be evaluated with some precautions in mind, to avoid misidentifiying for example interference effects due to differences in \hbng thickness as features of the absorption behaviour of the sample.
+The signal $S_R$ is the difference of the Reflection signals of \tmdg flake and background. The division by the background reflection is made to normalize the signal. The resulting reflection spectrum should show only features, of the flake. In practice, the obtained data has to be evaluated with some precautions in mind, to avoid misidentifying for example interference effects due to differences in \hbng thickness as features of the absorption behavior of the sample.
 
-\section{Electrical characterization}
+\section{Modelling peak shapes}\label{fits}
 
-To function of a gate-tunable \tmd-device is threefold. The top-gate electrode has to be in contact with the flake of interest, the contacts to the backgate have to function, especially at low temperature and the dielectric has to hold enough voltage to see effects in the optical spectrum. Because the flake has only one contact, no transport measurement is possible. Hence the quality of the top-gate contact can only be assessed by seing its effects in the optical spectrum. The other two criteria can be checked and quantified without any optical means. As mentioned in (Section vong 1 fabrikation) the p-doped silicon bulk material, that is used as the back-gate electrode is prepared with two contacts. Both of these contacts can be connected to a simple multimeter, to measure the resistance between them. For this particular material a resistance of 5-6 \Omega\ means, the contacts function as planned. If there is no contact or a high resistance, one of the contacts might still be functional. This can be assessed by observing the spectrum for different voltages, just like the top-gate. Nevertheless, having an additional check by using two back-gate contacts, helps troubleshooting in case of issues with the device.
-
-The quality of the dielectric is quantified by measuring the capacity of the device for different voltages and monitoring the leak current (see Figure CV). A constant voltage across the desired range of operation ({\small$\pm $}30V) is added to a small alternating current of small amplitude ($U_0 = $ 10 mV$_{pp}$, $f = $ 77.1 Hz). The real part of the resulting current is the resistive current, or leakage and the imaginary part is proportional to the capacity. Both parts can be measured in a lock-in amplifier. For our devices, the leakage current at low voltages should not exceed the pico-ampere range. For characterizing the dielectric the constant voltage can be raised until the resistive current starts rising exponentially. The corresponding voltage is the maximum, that should be applied in the particular sample, because a higher voltage can result in charges breaking through the dielectric and forming conducting chanels, thus disabling the gate-tunability permanently. This sensitivity is the reason to use this more complicated characterization method instead of simply monitoring the current while applying voltages directly. Because very low currents can be measured with the lock-in amplifier, the boundary of safe operation can be approached very carefully.
-
-%Here is a figure of CV-measurement
-\begin{figure}[h]
-	\centering
-	\resizebox{!}{150pt}{%
-	\begin{tikzpicture}[scale=0.62, every node/.append style={transform shape}]
-	\begin{circuitikz}
-		\draw (0,0) to[short] (0,0);
-		\draw 
-		(0,6) to[short, o-] (0,3)
-		(0,3) to[R, l=$10k\Omega$,-*] (2,3) 
-		(2,1) to[C, l=$2.2 \mu$F] (2,3) 
-		(2,1) node[ground]{}
-		(2,3) to[R, l=$100k\Omega$] (4,3) -- (7,3)
-		(5,3) to[C, l=$0.68\mu$F,*-] (5,5)
-		(5,5) to[short, -o] (5,6)
-		(7,3) to[short, -o] (7,2)
-		(8,2) to[short, o-] (8,3) -- (10,3)
-		(7,6) to[short, o-] (7,5)
-			 to[short] (8,5)
-		(8,5) to[short, -o] (8,6)
-		(10,3) to[short, -o] (10,6)
-		;
-		\node at (7.5,4.7) {$77.1$Hz};
-		\node at (6.15,2) {Topgate};
-		\node at (9,2) {Backgate};
-		\draw (-0.4,5.5) -- (-0.4,7) -- (2.2,7) -- (2.2,5.5) -- (-0.4,5.5);
-		\draw (4.6,5.5) -- (4.6,7) -- (7.4,7) -- (7.4,5.5) -- (4.6,5.5);
-		\draw (7.6,5.5) -- (7.6,7) -- (10.4,7) -- (10.4,5.5) -- (7.6,5.5);
-		\node[align=left] at (1,6.5) {DC-Voltage\\source};
-		\node[align=left] at (6.1,6.5) {AC-function\\generator};
-		\node[align=left] at (8.9,6.5) {Lock-in\\amplifier};
-	\end{circuitikz}
-
-	\end{tikzpicture}
-	}
-	\caption{This is bullshit}
-\end{figure}
-
-\chapter{Spectroscopy of \wse gate devices}
-
-The goal of this thesis was to advance tools that can help understanding the optical spectra of \tmdg monolayers. The fabrication tools have been discussed in the previous chapters. In this chapter the experimental tools and results will be discussed in more detail. The gate electrodes will be used to tune the charge density inside the sample and the sample itself will be placed in a homogenious magnetic field. All of these techniques have the goal of providing additional dimensions along one can influence the spectrum to find the underlying physical processes, that lie at the root of the individual features.
-
-Tungsten-based \tmds are of particular interest, because their more complex band-structure that yields a rich spectrum. The following measurements are all performed on a sample of tungsten-diselenide (\wse\!).
-
-\begin{figure}[h]
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[height=0.65\textwidth]{spectrum_neutral_negative}
-	\end{subfigure}
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[height=0.65\textwidth]{Voltsweep}
-	\end{subfigure}
-	\caption{Photoluminescence of \wse at different doping levels. \textbf{A} Spectra in the neutral and negatively charged regime. The \pl of the exciton (X) is clearly visible at the blue end of the spectrum. The replica peaks (R$_1$, R$_2$) correspond to phonon sidebands of momentum indirect excitons. In a negtively charged regime, they vanish in favor of redshifted peaks, that correspond to the trion (X$^-$) with its carracteristic splitting and its momentum indirect counterparts. \textbf{B} Spectral features in a gate-sweep. The plot can be devided into a neutral and charged regime below and above 5V. This threshold is a signature of unintentional n-doping and varies across the sample.}\label{plspectrum}
-\end{figure} 
-
-\begin{figure}[h]
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[height=0.65\textwidth]{RF_neut_neg_pure}\label{rfspectrum}
-	\end{subfigure}
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[height=0.65\textwidth]{RF_Voltsweep}
-	\end{subfigure}
-	\caption{Reflection of \wse at different doping levels. \textbf{A} The reflection spectrum of \wse in a neutral and negatively charged regime. The neutral spectrum shows a strong response, corresponding to the main exciton resonance (X). The absorption of the exciton almost vanishes in the charged spectrum and a double dip appears, that corresponds to the trion resonance, resolving the typical exchange splitting (X$^-$). \textbf{B} Reflection spectra at different voltages. The exciton absorption shows a similar response as in \pl, however stretched to lower voltages. The absorption at the trion resonance can be resolved much better, than the corresponding peaks in \pl. }\label{rfspectrum}
-\end{figure}
-
-\section{Modelling peak shapes}
-
-\begin{figure}[h]
+\begin{figure}[t]
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
 		\includegraphics[height=0.65\textwidth]{X_Trion_fit}
@@ -116,9 +43,9 @@ i(\nu)&= \frac{a}{1+\epsilon^2} \\
 \end{align}
 where $I$ is the intensity, \epsilon is the reduced energy, composed of the energy $\nu$, the peak position $\nu_0$ the linewidth $\gamma$ at \textsc{fwhm}. For a maximum value $a$ of 1, the function is normalized. In the crowded spectrum of an imperfect sample however, this is only an approximation, as the different peaks blend together and can have fine structures, that cannot be resolved as individual features. This leads not only to a broadening of the lines, but also skews the line shape, mostly resulting in a ``red shoulder'' -- higher intensity towards the low-energy end of the peak. To accurately model these features and get good estimates for peak positions as well as linewidths the lorentzian has to be expanded. A generic way of modelling an asymmetric line, that is close to the ``natural'' linewidth is using a lorentzian with variable linewidth $\gamma$, meaning the static linewidth of in \ref{lorentz} is replaced by a smooth sigmoid function, that includes an additional symmetry parameter\cite{stancik_simple_2008}.
 \begin{equation} \gamma = \frac{2\gamma_0}{1+e^{k(\nu-\nu_0)}}\label{asymlorentz} \end{equation}
-This value is then insterted into \eqref{lorentz}. The symmetry parameter $k$ scales the steepness of the s-cuve sigmoid function and thus the skeewedness of the lineshape. The $\gamma_0$ parameter is identical to $\gamma$ at $\nu_0$ and corresponds to the peaks linewidth. For $k=0$ \eqref{lorentz} collapses to unity and the standard lorentz lineshape is recovered. The asymmetric lorentzian can be used to model all peaks in the \pl spectrum.
+This value is then insterted into \eqref{lorentz}. The symmetry parameter $k$ scales the steepness of the s-cuve sigmoid function and thus the skeewedness of the lineshape. The $\gamma_0$ parameter is identical to $\gamma$ at $\nu_0$ and corresponds to the peaks linewidth. For $k=0$ \eqref{lorentz} collapses to $\gamma_0$ and the standard lorentz lineshape is recovered. The asymmetric lorentzian can be used to model all peaks in the \pl spectrum.
 
-In reflection spectroscopy, the signal should correspond to the absorption of the sample. Therefore the straight foreward way to model features would base on a lorentzian function as well, only with a negative sign\footnote{The sign of the fitting functions depends on the definition of the spectrum itself. In this work, the background is substracted from the signal, yielding the reflection off the flake. A flipped sign on the other hand corresponds to the absorption.}. However, the real reflection spectrum is more complicated due to multiple possible effects, not covered by this thesis (see Figure \ref{rfspectrum}). The trion signal in the charged spectrum shows a double dip. This can be modelled by simply adding two negative asymmetric lorentzians and compensating for the positive offset with an additional constant parameter simply added to the function. The main exciton resonance however has a highly asymmetric lineshape, that cannot be modelled with a bare lorentzian (either \eqref{lorentz} or \eqref{asymlorentz}). A more general function is a so called fano resonace. The physical background is the interference between a resonance and a continuous background\cite{fano_effects_1961}. 
+In reflection spectroscopy, the signal should correspond to the absorption of the sample. Therefore the straight foreward way to model features would base on a lorentzian function as well, only with a negative sign\footnote{The sign of the fitting functions depends on the definition of the spectrum itself. In this work, the background is substracted from the signal, yielding the reflection off the flake. A flipped sign on the other hand corresponds to the absorption.}. However, in an \hbn-encapsulated sample, the spectrum can be more complicated (see Figure \ref{rfspectrum}). The trion signal in the charged spectrum shows a double dip. This can be modelled by simply adding two negative asymmetric lorentzians and compensating for the positive offset with an additional constant parameter simply added to the function. The main exciton resonance however has a highly asymmetric lineshape, that cannot be modeled with a bare lorentzian (either \eqref{lorentz} or \eqref{asymlorentz}). A more general function is a so called fano resonace. The physical background is the interference between a resonance and a continuous background\cite{fano_effects_1961}. In case of encapsulated \tmdg monolayers, this lineshape stems from interference effects of the \hbng substrate\cite{scuri_large_2018}.
 \begin{equation}
 \frac{(q+\epsilon)^2}{(1+\epsilon^2)} = 1 + \frac{q^2+2q\epsilon-1}{1+\epsilon^2}\label{fano}
 \end{equation}
@@ -127,13 +54,60 @@ Examples of the fitting process for reflection and \pl spectra can be seen in fi
 
 Besides quantifying the sample quality via the linewidth parameter, the described fitting procedures were extensively used in the next section to find peak positions at different doping levels and different magnetic fields.
 
-\section{Measuring the valley zeeman effect at different doping levels}
+\section{Ws\textup{e}$_2$ spectrum at different doping levels}
 
-A functioning gate-tunable device is an ideal base to study different features of \tmds in different doping regimes. The narrow linewidths of clean, \hbng encapsulated \wse samples also allows for the precise quantification of the valley zeeman effect (see theory section), acting on the different states, that make up the \pl and reflection spectra. Using the fitting procedures of the previous section, all features can be quantified in terms of position, linewidth and intensity.
+The general composition of the \wse spectrum was described in \ref{composition}. With a functioning gate-tunable sample with narrow linewidths these features can be explored and individually studied. 
 
-The data, discussed in this section consists of \pl and reflection spectra, that are recorded on a grid of magnetic field between -8 and 8 T, against gate voltage between -15 and 15 V . In this way, every spectral feature can be tracked through a gate sweep, while measuring its g-factor.
+\subsection{Photoluminescence spectrum}
 
-\begin{figure}[h]
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{spectrum_neutral_negative}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{Voltsweep}
+	\end{subfigure}
+	\caption{Photoluminescence of \wse at different doping levels. \textbf{A} Spectra in the neutral and negatively charged regime. The \pl of the exciton ($X$) is clearly visible at the blue end of the spectrum. The replica peaks ($R_1$, $R_2$) correspond to acoustic phonon sidebands of $Q$- and $K'$-indirect excitons with low-intensity features to the red indicating optical sidebands. In a negtively charged regime, they vanish in favor of redshifted peaks, that correspond to the trion (X$^-$) that is split by electron-electron exchange interaction, and its momentum indirect counterparts. While $R^-_1$ fits the picture as an accoustic sideband of $X^-$, $R^-_2$ seems to be the charged spin-unlike dark state. \textbf{B} Spectral features in a gate-sweep. The plot can be devided into a neutral and charged regime below and above 5V. This threshold is a signature of unintentional n-doping and varies across the sample.}\label{plspectrum}
+\end{figure} 
+
+The \pl spectrum is pictured in figure \ref{plspectrum} both in a neutral and charged regime. Exfoliated \tmds are often unintentionally doped negatively (Referenz). Therefore the positive regime could not be probed in this sample. The peak to the blue end of the spectrum belongs direct spin-like exciton ($X$). This peak is well understood and can therefore be used to benchmark the spectral linewidth and the overall quality of the sample. With a linewidth of 6.8 meV the exciton is still above the intrinsic homogeneous linewidth which is reported to be below 2 meV\cite{moody_intrinsic_2015, ajayi_approaching_2017}. Inhomogeneous broadening can be mostly attributed to local changes in the potential landscape that can arise from defects, impurities as well as strain induced shifts in the band structure\cite{zhu_strain_2013}. The diffraction limited spot of the objective is large enough to cover a large ensemble of slightly different contributions to the \pl signal, that merge to a broad peak. Apart from the \textsc{fwhm} linewidth of the exciton peak, both a significant asymmetry parameter in the fit as well as a slight deviation from the lorentzian line-shape are indicators, that the feature has an considerable substructure and there is still room for improvement in terms of sample fabrication.
+
+However, the linewidth-limited resolution of the present sample is good enough to distinguish the fine splitting of the trion peak in the charged regime ($X^-$). When the gate voltage is tuned, the Fermi level is shifted. The negative regime is reached when the Fermi level rises above the lower $K$ and $K'$ valleys in the conduction band and free charge carriers enter the flake. Optically excited excitons can bind electrons from either of the two valleys resulting in two a-priori degenerate trion states, that differ energetically because of a difference in Coulomb exchange interaction \cite{courtade_charged_2017}. The resulting splitting can be resolved in the present sample and has a value of 5.2 meV. The spectral difference to the exciton peak in the neutral regime gives an estimate of an additional trion binding energy. Taking into account the exchange splitting it has a value of 30.5 - 35.8 meV. Since the separation of the two trion peaks is quite low, the linewidth estimates from the fit are only a rough estimate but are close to the neutral exciton at 5-7 meV showing the close relation of both features. 
+
+The peaks to the red in both the neutral and charged spectra can be explained using the phonon sideband model described in \ref{sidebands}. The $Q$-indirect exciton should lie above the direct spin-unlike state. Therefore it makes sense to identify the intense $R_1$ peak with its acoustic sidebands, putting the $Q$-exciton roughly 19 \pm 2 meV below $X$. The optical sidebands coincide with a low intensity bump that fits the predicted energies. The direct spin-unlike exciton ($D$) should be 40 meV to the red of $X$, but cannot be resolved clearly, possibly because $R_1$ is broad and intense enough to merge with the weak \pl of $D$. Its momentum-indirect counterpart in $K'$ should have the same energy, thus we can estimate its phonon sidebands, which fit the strong $R_2$ peak and the corresponding low-intensity feature to the red.
+
+Assuming the nature of the phonon sidebands does not change fundamentally in a charged environment it is worth a try to treat the charged spectrum in a similar fashion. Analogous to the trion, the energy of the peaks should redshift upon interaction with free charge carriers. When shifting the $Q$-valley by the trion binding energy, it fits the two most intense replica peaks in the charged spectrum ($R^-_1, R^-_2$). However, $R^-_2$ also matches $D$ shifted by the trion binding energy. This could explain the relatively strong signal at this energy. The weak feature to the red could then charged acoustic replica of $K'$. 
+
+\subsection{Reflection spectrum}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{RF_neut_neg_pure}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{RF_Voltsweep}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{spectrum_neutral_negative}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{Voltsweep}
+	\end{subfigure}
+
+	\caption{Reflection of \wse at different doping levels. \textbf{A} The reflection spectrum of \wse in a neutral and negatively charged regime. The neutral spectrum shows a strong response, corresponding to the main exciton resonance (X). The absorption of the exciton almost vanishes in the charged spectrum and a double dip appears, that corresponds to the trion resonance, resolving the typical exchange splitting (X$^-$). \textbf{B} Reflection spectra at different voltages. The exciton absorption shows a similar response as in \pl, however stretched to lower voltages. The absorption at the trion resonance can be resolved much better, than the corresponding peaks in \pl. Photoluminescence of \wse at different doping levels. \textbf{C} Spectra in the neutral and negatively charged regime. The \pl of the exciton ($X$) is clearly visible at the blue end of the spectrum. The replica peaks ($R_1$, $R_2$) correspond to acoustic phonon sidebands of $Q$- and $K'$-indirect excitons with low-intensity features to the red indicating optical sidebands. In a negtively charged regime, they vanish in favor of redshifted peaks, that correspond to the trion (X$^-$) that is split by electron-electron exchange interaction, and its momentum indirect counterparts. While $R^-_1$ fits the picture as an accoustic sideband of $X^-$, $R^-_2$ seems to be the charged spin-unlike dark state. \textbf{D} Spectral features in a gate-sweep. The plot can be devided into a neutral and charged regime below and above 5V. This threshold is a signature of unintentional n-doping and varies across the sample.}\label{rfspectrum}
+\end{figure}
+
+The reflection spectrum can be seen in figure \ref{rfspectrum}. The neutral spectrum shows a clear signature of the main exciton resonance ($X$). This spectral feature in an \hbng encapsulated sample has the shape of a fano resonance, because of interference effects, caused by the encapsulation. The \tmd-\hbng heterostructure acts as a microcavity and shows very high reflectivity at the resonance frequency\cite{scuri_large_2018}. Upon tuning the gate to negative voltages, the absorption and reflection at the exciton resonance is suppressed and the trion resonance forms ($X^-$). Just like in \pl this resonance exhibits a splitting due to coulomb exchange energy. 
+
+
+\section{Measuring the valley zeeman effect}
+\begin{figure}[t]
 	\begin{subfigure}{0.32\textwidth}
 		\caption{}
 		\includegraphics[width=\textwidth]{waterfall_0T}
@@ -146,6 +120,64 @@ The data, discussed in this section consists of \pl and reflection spectra, that
 		\caption{}
 		\includegraphics[width=\textwidth]{waterfall_8T_sm}
 	\end{subfigure}
-	\caption{\textbf{A}  \textbf{B}}\label{waterfall}
+	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum the dark exciton ($D$) lies to close to the strong phonon sideband $R_1$ to be resolved clearly. The strong splitting of this feature reveals $D$ more clearly in the \sigma$^+$-polarized spectrum at 8T (\red{gfactor}). The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfall}
 \end{figure}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_0TRF}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8TRF_sp}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8TRF_sm}
+	\end{subfigure}
+	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum, towards the positive end, the replica peaks $R_1$ and $R_2$ get significantly skewed at 8 T, pointing towards several underlying peaks with different $g$-factors. The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfallRF}
+\end{figure}
+
+As described in section \ref{zeeman} the band gap and exciton energies in \tmds shift when exposed to an out-of-plane magnetic field. These shifts are reversed in light of opposite helicity and differ for different types of excitonic processes. Measuring the splitting, and quantifying it through the $g$-factor can yield a deeper insight in the nature of the spectral features. Figure \ref{waterfall} and \ref{waterfallRF} show the \pl and reflection spectra for different gate voltages at 0 and 8 T. Because of different magnetic shifts of the different peaks, looking at \sigma$^+$ and \sigma$^-$ polarized spectra at high magnetic field can help to resolve features, that are otherwise hidden by inhomogeneous broadening. The first interesting feature to study in this fashion is the two trion peaks ($X^-$). At 8 T they reveal significant change in their splitting, merging to one peak in \sigp while showing a clear splitting in \sigm. The trion fine structure as the result of electron-electron exchange interaction could yield an explanation for this difference. The singlet-state consists of an exciton and an electron of opposite spin at the $K$-point while the triplet state involves an additional electron in the $K'$-valley, but with the same spin component as the electron in the tighly bound exciton. Because these valleys shift in opposite directions, a different overall shift makes sense. This allows to also observe the different behavior with regards to the charge density. At high negative gate voltages, both peaks are less intense with the blue peak losing signal much more rapidly. The reasons for that are speculative at best. Recent measurements in \ws point to the singlet state being stable only at low temperatures\cite{vaclavkova_singlet_2018}. Similarly, the triplet state in \wse could be more sensitive to large densities of free charge carriers. 
+
+\subsection{G-factors}
+
+The magnetic splitting $\Delta E$ can be quantified by the $g$-factor. Because $\Delta E$ is linear in magnetic field strength $B$, the peak positions can be fitted using simple linear regression where the slope is connected to the $g$-factor in the following fashion:
+
+\[ g =  \frac{1}{\mu_B}\underbrace{\frac{\Delta E}{\Delta B}}_{slope} \]
+
+Because the splitting is a lot smaller than the linewidth -- 0.25 meV / T at a linewidth of 7 meV -- the peaks have to be fitted using the procedures described in \ref{fits} to obtain a low error and therefore an accurate estimate for the $g$-factor. Not all features can be resolved well enough, because of either a bad signal to noise ratio or linewidth-related blending with other peaks. The shifts and calculated $g$-factors can be seen in figures \ref{X_fits} and \ref{R_fits}.
+
+\subsubsection{Exiton \& trion}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_X}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_T}
+	\end{subfigure}
+	\caption{Exciton valley splitting in \pl and reflection. \textbf{A} The $g$-factor of the neutral exciton is in good agreement with theory and previous studies. The fit of the reflection measurement has a large error bar, because of the complicated lineshape. Since the variance of the data points is low, this seems to be a systematic error. \textbf{B} The trion peak can only be reliably modeled in the reflection spectrum because of insufficient signal-to-noise ratio and limitations of the linewidth. The fits suggest a different $g$-factor for the two subfeatures.}
+	\label{X_fits}
+\end{figure}
+
+
+\subsubsection{Phonon sidebands}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_R1}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_R2}
+	\end{subfigure}
+	\caption{Valley splitting of phonon replica. \textbf{A} The intense $R_1$ peak and its charged counterpart $R^-_1$ show a similar $g$-factor, suggesting the same origin. This is consistent with the proposed model, that identifies the peaks as acoustic sidebands of momentum-indirect excitons in the $Q$-valley. $R_1$ is of particular interest, because this feature conventionally is attributed to the trion. The strong difference in the $g$-factor however suggests a different origin than the trion feature, even though they share the same energy in the spectrum. \textbf{B} The neutral peak $R_2$ was previously identified as a phonon sideband of the $K'$-indirect exciton. The high $g$-factor however does not offer an argument to support . However, the charged counterpart $R^-_2$ has a similar $g$-factor as was previously measured for $D$, which underscores the assumption of the feature being the charged spin-unlike exciton in $K$. } 
+	\label{R_fits}
+\end{figure}
+
 

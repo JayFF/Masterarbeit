@@ -7,7 +7,8 @@ The fabrication of a functioning field effect structure of \tmdg mono- or bilaye
 	\caption{}
 	\begin{tikzpicture}
 	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{flakes.jpg}};
-	\node at (80pt, 30pt) {{\large \textbf{ML/BL}}};
+	\node at (84pt, 23pt) {{\large \textbf{ML/BL}}};
+	\draw[red, dashed, thick] (83pt, 39pt) circle (9pt);
 	\draw (20pt, 20pt) -- (60pt, 20pt);
 	\node at (40pt, 12pt) {\textbf{100\mu m}};
 	\end{tikzpicture}
@@ -25,17 +26,15 @@ The fabrication of a functioning field effect structure of \tmdg mono- or bilaye
 \caption{\textbf{A} During the exfoliation process a lot of flakes of different size and thickness are scattered over the substrate. Interesting specimen have to be searched for by hand. \textbf{B} Flake consting of mono- and bilayer regions that can be identified by their optical contrast.}
 	\label{flakes}
 \end{figure}
-Thin films of layered materials like \tmd's, like many natomaterials, can be fabricated using a top-down or bottom-up approach. The bottom-up approach for these particular materials is called chemical-vapor deposition (\textsc{cvd}) (Reference). Because of its scalability it is the leading candidate that could be used in an industrial fabrication pipeline. However, the top-down approach of mechanical exfoliatioin (Refernence) has become the first choice for a lot of projects to build high quality model systems, that can be used to study physics in low dimensions. The reason is the so far supperior quality of few-layer flakes in terms of defects and contaminants as well as the synergy with dry transfer methods(Reference(Laterchapter)). 
+Thin films of \tmds\!, like many natomaterials, can be fabricated using a top-down or bottom-up approach. The bottom-up approach for these particular materials is called chemical-vapor deposition (\textsc{cvd})\cite{chen_chemical_2016}. Because of its scalability it is the leading candidate that could be used in an industrial fabrication pipeline. However, the top-down approach of mechanical exfoliatioin has become the first choice for a lot of projects to build high quality model systems, that can be used to study physics in low dimensions\cite{geim_rise_2007}. The reason is the so far supperior quality of few-layer flakes in terms of defects and contaminants as well as the synergy with dry transfer methods(Reference(Laterchapter)). 
 
-The mechanical exfoliation process -- oftern referred to as the ``scotch tape method'' -- is based on the fact, that the van-der-Waals forces between adjacent layers in \tmd's are much weaker, than the lateral covalent bonds inside them. In fact, they are weak enough, that they can be easily broken appart by adhesive tape.
-
-The starting point is a solid crystal of \tmd-material, that can be produced either naturally or synthetically with high purity (supplied by hq-graphene). When a stripe of adhesive tape is brought in contact with it, a small amount can be peeled off. With a second stripe, that is put on the first one, the process is repeated multiple times. Each time, the fresh tape is peeled of its parent, the strong adhesion between tape and \tmdg ensures a clean interface. Three to four repetitions are an optimum to produce monolayers of a useful size. More repetitions further thin the material but heighten the risk of these thin films to break to smaller peaces, which complicates processing the flakes later on and build larger devices. 
+The mechanical exfoliation process -- oftern referred to as the ``scotch tape method'' -- is based on the fact, that the van-der-Waals forces between adjacent layers in \tmd's are much weaker, than the lateral covalent bonds inside them. In fact, they are weak enough, that they can be easily broken appart by adhesive tape. The starting point is a solid crystal of \tmd-material, that can be produced either naturally or synthetically with high purity (supplied by hq-graphene). When a stripe of adhesive tape is brought in contact with it, a small amount can be peeled off. With a second stripe, that is put on the first one, the process is repeated multiple times. Each time, the fresh tape is peeled of its parent, the strong adhesion between tape and \tmdg ensures a clean interface. Three to four repetitions are an optimum to produce monolayers of a useful size. More repetitions further thin the material but heighten the risk of these thin films to break to smaller peaces, which complicates processing the flakes later on and build larger devices. 
 
 To prepare monolayer flakes for the assembly of more complex devices, they first have to be transferred onto a suitible substrate. In this work, this substrate is silicon with a layer of thermal oxide that is between 50 and 90 nm thick. Before wafers of this material are brought in contact with the exfoliation tapes they are cleaned both in acetone and isopropanole before being exposed to oxygen plasma for 180 s. This ensures a clean surface and maximizes the material that sticks to the wafer(Reference). After the tape is in contact, the wafer is heated to 90°C. After cooling down the tape can be peeled off and the wafer is inspected for monolayers. As seen in [Figure], during this process a large number of flakes of different sizes and thicknesses are transferred and it is uncommon to find more than one monolayer of suitible size on a wafer of 10 by 10 mm. 
 
 \subsection{Layer number}
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
 	\begin{subfigure}{0.4\textwidth}
 	\caption{}
@@ -57,13 +56,13 @@ To prepare monolayer flakes for the assembly of more complex devices, they first
 	\label{pl-contrast}
 \end{figure}
 
-Under an optical microscope monolayers can be identified using the optical contrast and the color. It is possible to verify the layer number by this criteria alone using a camera and image analysis software(Reference/Victor?), however this is much more reliable on transparent substrates, since the optical contrast is higher and the lighting conditions can be controlled more precisely. With our optical microscope and \si/\sio substrates, monolayer candidates where instead verified using photoluminescence (\textsc{pl}) imaging(Referenz Andre). Because of the direct band-gap, monolayers of \tmd's are much more efficient emitters than even bilayers with almost an order of magnitude difference in \textsc{pl}-intesity. The result can be seen in Figure \ref{pl-contrast}. The sample is excited with a laser with a wavelength above the A-exciton resonance and only the \textsc{pl} is collected on the chip of a \textsc{usb}-camera. A detailled description of the optical setup can be found in (Optical Setup). As can be seen, the \textsc{pl}-image clearly identifies the monolayer-regions through bright intensity, while the bilayer region of the flake is not visible at all. On the microscope picture on the other hand, both regions do not differ much in color and reflectance and can be tricky to tell appart, especially when the lighting is inhomogenious or changes over time.
+Under an optical microscope monolayers can be identified using the optical contrast and the color. It is possible to verify the layer number by this criteria alone using a camera and image analysis software\cite{funk_spectroscopy_2017}, however this is much more reliable on transparent substrates, since the optical contrast is higher and the lighting conditions can be controlled more precisely. With our optical microscope and \si/\sio substrates, monolayer candidates where instead verified using photoluminescence (\textsc{pl}) imaging(Referenz Andre). Because of the direct band-gap, monolayers of \tmd's are much more efficient emitters than even bilayers with almost an order of magnitude difference in \textsc{pl}-intesity. The result can be seen in Figure \ref{pl-contrast}. The sample is excited with a laser with a wavelength above the A-exciton resonance and only the \textsc{pl} is collected on the chip of a \textsc{usb}-camera. A detailled description of the optical setup can be found in (Optical Setup). As can be seen, the \textsc{pl}-image clearly identifies the monolayer-regions through bright intensity, while the bilayer region of the flake is not visible at all. On the microscope picture on the other hand, both regions do not differ much in color and reflectance and can be tricky to tell appart, especially when the lighting is inhomogenious or changes over time.
 
-Other methods to idetify monolayers inlcude both photoluminescence and Raman spectroscopy(Reference). However, for assembling devices and verifying the quality of exfoliated flakes, \textsc{pl}-imaging proved to be the fastest and most versatile method.
+Other methods to idetify monolayers inlcude both photoluminescence and Raman spectroscopy\cite{zhao_lattice_2013,zhang_phonon_2015,tonndorf_photoluminescence_2013}. However, for assembling devices and verifying the quality of exfoliated flakes, \textsc{pl}-imaging proved to be the fastest and most versatile method.
 
 \section{Hexagonal boron nitride}
 
-For spectroscopic studies of \tmd's the right substrate plays one of the most crucial parts. Hexagonal boron nitride (\hbn) has proven to be the supperior choice to observe narrow linewith spectra in \tmd's. On substrates like \sio dangling bonds and strain due to surface roughness can induce scattering of excitons, that reduce the lifetime and induce inhomogenious broadening. This effects are strong enough make many different spectral features indistinguishible. \hbn is an has a large indirect band-gap in the \textsc{uv}-range, and acts like a transparent insulator. Furthermore, its graphene-like crystal structure allows the exfoliation of atomically flat terasses, that can be used as a dielectrically calm substrate, not only for optical measurements on \tmds but for other areas of layered materials as well. The best results have been obtained by not only placing flakes on \hbn but to fully incapsulate them. Since \hbn, much like \tmds is a layered material, flakes of it can be exfoliated in the same manner and \tmd-monolayers can be fully encapsulated by ``sandwitching'' them between two flakes of \hbn.
+For spectroscopic studies of \tmd's the right substrate plays a very crucial parts. As discussed in section \ref{theory_exciton}, the ultrathin geometry of \tmdg monolayers makes them very sensitive to the dielectric environment. To obtain a narrow linewith of the spectral features both in reflection and \pl spectroscopy, a suitable substrate not only has to have a minimal roughness on the surface that should ideally be atomically flat, to avoid modulation of the band structure through strain. Also, the substrate has to be dielectrically calm to avoid pertubation of excitons by dangling bonds, that reduce lifetimes and broaden the spectral lines. Both criteria rule out traditional substrates such as \si and \sio. In recent years hexagonal boron nitride (\hbn) has proven to be the supperior choice to observe narrow linewidth spectra in \tmd's\cite{courtade_spectrally_2018}. \textsc{Hbn}, just like \tmds is a layered material, but belongs to the class of 2\textsc{d}-isolators, with a large, indirect band gap in the \textsc{uv}-range\cite{arnaud_huge_2006}. Thin, flat layers of \hbng can be mechanically exfoliated and can achieve large, flat terraces. Few layers are sufficient to shield a \tmdg sample from the underlying substrate. To achieve even narrower lines, it can be ``sandwiched'' between two flakes of flat \hbng as was done with all samples contributing to this thesis. From the standpoint of nanofabrication \hbng has another important property. The van-der-Waals forces at \hbn-\tmdg interfaces are stronger than between a \tmdg sample and \sio. This enables the hot pick up assembly, discussed in section \ref{hot_pickup}.
 
 \section{Electrode fabrication}
 
@@ -94,31 +93,70 @@ The goal of this thesis was, to fabricate high quality \tmd-monolayer samples th
 	\label{pattern}
 \end{figure}
 
-In many gated devices, that incorporate \tmd-monolayers, the gate electrodes are actually fabricated directly onto the sample as a last step(Referenzen). While the fabrication of contacts can be more precisely tailored in this way, the big drawback is the exposure of the monolayers to a lot of chemicals like photoresist and developer, that can contaminate the sample and lower its quality. Therefore in this work a more simple approach was chosen. Instead of writing contacts after transfer, contacts are fabricated beforehand. The encapsulated \hbn-\tmd-heterostructure can be contacted by dropping it on the edge of the gold structure.
+In many gated devices, that incorporate \tmd-monolayers, the gate electrodes are actually fabricated directly onto the sample as a last step(Referenzen). While the fabrication of contacts can be more precisely tailored in this way, the big drawback is the exposure of the monolayers to a lot of chemicals like photoresist and developer, that can contaminate the sample and lower its quality. Therefore in this work a more simple approach was chosen. Instead of writing contacts after transfer, contacts are fabricated beforehand. The encapsulated \hbn-\tmd-heterostructure can be contacted by dropping it on the edge of the gold structure. The gold patterns are created using contact lithography using a chromium mask, deposited on glass. Because the heterostructure can be dropped at any point on the substrate, the precise shape of the gold structure is unimportant. Therefore no new lithographic mask had to be fabricated. Instead a suitable mask was chosen from old preused structures. The downside is, that these masks can deteriorate over time and over many uses, but because of the low requirements for the electrodes all its defects manifest themselves in a purely aesthetic manner and do not affect its functionality. The process starts with spin coating \textsc{az}701-photoresist on a \si/\sio wafer. Using the blabla-Maskaligner, the wafer is brought in contact with the mask before exposing it to \textsc{uv}-light for 18 seconds. After that, the pattern is developed using blabla-developer, that washes out the exposed photoresist.
 
-The gold patterns are created using contact lithography using a chromium mask, deposited on glass. Because the heterostructure can be dropped at any point on the substrate, the precise shape of the gold structure is unimportant. Therefore no new lithographic mask had to be fabricated. Instead a suitable mask was chosen from old preused structures. The downside is, that these masks can deteriorate over time and over many uses, but because of the low requirements for the electrodes all its defects manifest themselves in a purely aesthetic manner and do not affect its functionality.
+In the next step, the sample is coated in an X-ray evaporation system. First, a 1-5nm film of titanium is deposited on the substrate, that acts as a bonding agent. Subsequently a 50nm film of gold is deposited ontop, that forms the actual top-gate electrode. After removing the sample from the high-vacuum chamber the undevelopped photoresist is removed in the so called ``lift-off''. The substrate is simply bathed in acetone, that desolves the resist below most of the deposited gold and only the structures in the developped areas remain. To speed up the lift-off process, the sample can be placed in an ultrasonic cleaner at a low power. The resulting structure can be seen in Figure \ref{pattern}. 
 
-The process starts with spin coating blabla-photoresist on a \si/\sio wafer. Using the blabla-Maskaligner, the wafer is brought in contact with the mask before exposing it to \textsc{uv}-light for 18 seconds. After that, the pattern is developed using blabla-developer, that washes out the exposed photoresist.
+\subsection{Back gate electrodes}
 
-In the next step, the sample is coated in an X-ray evaporation system. First, a 1-5nm film of titanium is deposited on the substrate, that acts as a bonding agent. Subsequently a 50nm film of gold is deposited ontop, that forms the actual top-gate electrode. After removing the sample from the high-vacuum chamber the undevelopped photoresist is removed in the so called ``lift-off''. The substrate is simply bathed in acetone, that desolves the resist below most of the deposited gold and only the structures in the developped areas remain. To speed up the lift-off process, the sample can be placed in an ultrasonic cleaner at a low power.
+\begin{figure}
+	\centering
+	\resizebox{!}{150pt}{%
+	\begin{tikzpicture}[scale=0.62, every node/.append style={transform shape},
+        interface/.style={
+        % The border decoration is a path replacing decorator. 
+        % For the interface style we want to draw the original path.
+        % The postaction option is therefore used to ensure that the
+        % border decoration is drawn *after* the original path.
+        postaction={draw,decorate,decoration={border,angle=-45,
+                    amplitude=0.3cm,segment length=2mm}}},
+        ]
+	\begin{circuitikz}[american voltages]
+		\draw (0,0) to[short] (0,0);
+		\draw 
+		(0,4) to[V, v=$20$V to $30$V] (0,0)
+		(0,4) to[R, l=$3$k$\Omega$] (4,4)
+		(0,0) to[short, *-] (4,0)
+		(0,0) node[ground]{}
+		(4,4) to[C, l=$1000$\mu F, *-*] (4,0)
+		(4,4) to[short] (7,4)
+		(7,4) to[short] (7,3)
+		(7,3) to[short] (7.7,2.3)
+		(7.7,2.3) node[inputarrow, rotate=315] {}
+		(4,0) to[short] (7,0)
+		(7,0) to[short] (7,1)
+		(7,1) to[short] (7.7,1.7)
+		(7.7,1.7) node[inputarrow, rotate=45] {}
+		;
+		\draw[line width=.5pt,interface] (8.1,0.7)--(8.1,3.2);
+		\node at (8.2,3.6) {Substrate};
+		\node at (6.8,2.05) {Gold wires};
+	\end{circuitikz}
+		
+	\end{tikzpicture}
+	}
+	\caption{Circuit diagram for back gate fabrication: A capacitor is charged at 20V to 30V. Two boron-doped gold wires are moved very colesly to the silicon substrates. Once the distance between the wires and the substrate is low enough, an electric arc will form, when the capacitor discharges through the substrate. The heat from the current liquifies the tip of the gold wire, which diffuses inside the silicon and ``smears out'' the semiconductor/metal-interface.}\label{arc}
+\end{figure}
 
-The resulting structure can be seen in Figure \ref{pattern}. 
+Silcon is a semiconductor. A simple contact with a metal wire therefore results in a Schottky barrier at low temperatures even with a moderately doped substrate like the ones used in this thesis. To create an ohmic contact, to the backgate, the semiconcutor/metal interface is ``smeared out'' by diffusing boron doped gold into the substrate. This is achieved by applying a voltage (20 V to 30 V) between two gold wires and bringing them close to the substrate. Because the \si substrate has a higher conductivity than the ambient air, an arc discharge between the tips of the wires will preferably find its way through the substrate. When the arc forms upon bringing the wires very close to the substrate and each other the ohmic heat will liquify the tips of the wires and inject gold into the topmost layers of the silicon. This creates a gradual metal-semiconductor interface and avoids a Schottky barrier.
 
-\section{Hot pick-up and transfer}
+This process can be very violent. Gold droplets can splash over a large distance and gold can not only diffuse into the backgate but can also contaminate the \sio dielectric, lowering the breakdown voltage significantly. Therefore this step in the fabrication process should be taken before assembling the \tmd-\hbng heterostructure. This way, the substrate can be replaced in case of failure.
+
+\section{Hot pick-up and transfer}\label{hot_pickup}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{Stempelaufbau.png}
 
-	\caption{Setup for hot pick-up and stamping. The substrate is placed on a small, round \textbf{ceramic heater} with a 3mm whole in the center(Referenz Thorlabs), that is \textsc{pid}-controlled and can reach temperatures up to 200°C. It is mounted airtight onto the massive sample holder, that is connected to a \textbf{vacuum pump} to hold the \textbf{substrate} in place. It is \textbf{fully rotatable} and can be moved in plane. The \textsc{pdms/ppc} \textbf{stamp} is monted to a z-translator and can be tilted with respecto to both in-plane axes. The \textsc{optical microscope} can also be moved in-plane.}
+	\caption{Setup for hot pick-up and stamping. The substrate is placed on a small, round \textbf{ceramic heater} with a 3mm whole in the center(Referenz Thorlabs), that is \textsc{pid}-controlled and can reach temperatures up to 200°C. It is mounted airtight onto the massive sample holder, that is connected to a \textbf{vacuum pump} to hold the \textbf{substrate} in place. It is \textbf{fully rotatable} and can be moved in plane. The \textsc{pdms/ppc} \textbf{stamp} is monted to a z-translator and can be tilted with respecto to both in-plane axes. The \textbf{optical microscope} can also be moved in-plane.}
 	\label{stamping-setup}
 \end{figure}
 
-The mechanical exfoliation method is popular also for its synergy with dry transfer methods. \textsc{Cvd}-grown \tmd-flakes are grown on suitible substrates and can be transferred to target substrate using a variation of wet methods, that involve powerful solvents or a combination of solvents and polymer films to lift the grown flakes off their initial substrate(Referenz PMMA method etc.). The advantage of the exfoliation method in this regard is that flakes can be put on any substrate directly from the adhesive tape. That led to the invention of ``viscoelastic stamping'', where the \tmd-material is exfoliated on a substrate of viscoelastic polymer called polydimethylsiloxane (\textsc{pdms})(Reference). This so called ``stamp'' could then be brought in contact with the target substrate and peeled off carefully to drop down the flake at a desired condition opening up the possibility of producing carefully designed heterostructures deterministically.
+The mechanical exfoliation method is popular also for its synergy with dry transfer methods. \textsc{Cvd}-grown \tmd-flakes are grown on suitible substrates and can be transferred to target substrate using a variation of wet methods, that involve powerful solvents or a combination of solvents and polymer films to lift the grown flakes off their initial substrate \cite{li_universal_2014}. The advantage of the exfoliation method in this regard is that flakes can be put on any substrate directly from the adhesive tape. That led to the invention of ``viscoelastic stamping'', where the \tmd-material is exfoliated on a substrate of viscoelastic polymer called polydimethylsiloxane (\textsc{pdms})\cite{castellanos-gomez_deterministic_2014}. This so called ``stamp'' could then be brought in contact with the target substrate and peeled off carefully to drop down the flake at a desired position, opening up the possibility of producing carefully designed heterostructures deterministically.
 
-The requirement to sandwitch samples in \hbn opened up the possibility of using the van-der-Walls forces between \hbn and 2D-materials not only to drop down exfoliated layers, flake by flake but to pick up 2D-materials with \hbn-flakes, inreasing the yield as well as ensuring very clean interfaces, free of contaminants of the polymer stamp. 
+The use of \hbng to provide an optimal dielectric environment opened up the possibility of using the van-der-Walls forces between \hbn and 2D-materials not only to drop down exfoliated layers, flake by flake but to pick up 2D-materials with \hbn-flakes, inreasing the yield as well as ensuring very clean interfaces, free of contaminants from the polymer stamp. 
 
-The method used for this work is called ``hot pick-up and stamping'' (Reference). The stamp used in this process is a block of \textsc{pdms}, mounted on a glass slide with transparent adhesive tape. This block is spin-coated with a polymer polypropylene carbonate (\textsc{ppc}). To make sure, that the polar \textsc{ppc} sticks to the stamp while being heated to high temperatures it is treated in oxygen plasma for at least 20 minutes before the spin coating.
+The method used for this work is called ``hot pick-up and stamping''\cite{pizzocchero_hot_2016, tien_study_2016}. The stamp used in this process is a block of \textsc{pdms}, mounted on a glass slide with transparent adhesive tape. This block is spin-coated with a polymer polypropylene carbonate (\textsc{ppc}). To make sure, that the polar \textsc{ppc} sticks to the stamp while being heated to high temperatures it is treated in oxygen plasma for at least 20 minutes before spin coating\cite{jung_adhesion_2016}.
 
 The \tmd-flake is exfoliated on a \si/\sio substrate and so are suitible bottom and top \hbn flakes. The primary criteria for finding the right \hbn-flakes is the flattness of its surface, so that the \tmd-flake can be encapsulated between two large terasses without cracks or steps. To allow a fast fabrication process, this flattness is only judged with help of an optical microscope. More sophisticated methods like atomic force microscopy can be used to verify the flattness more accurately, however this not only extends the fabrication process but does not help determining the quality of the top \hbn flake, since its interface is facing down after being exfoliated on the parent substrate.
 
@@ -132,6 +170,46 @@ Despite the strong plasma treatment of the \textsc{pdms}-stamp in some cases the
 
 \subsection{Annealing}
 
-While the hot pick-up should in theory ensure a \hbn-\tmdg interface free of contamination, especially contamination due to humidity in the ambient air can remain between the layers and seriously lower the quality of the sample. To remove this pollution, the sample can be annealed(Referenz). During annealing, the sample is placed in an annealing oven. While maintaining a high vacuum of 10$^{-3}$ mbar, the oven heats the sample up to 250°C for around three hours. Other recipes, that use higher or lower temperatures or longer annealing times can work just as well as long as they ensure the complete evaporation ov residual water. 
+While the hot pick-up should in theory ensure a \hbn-\tmdg interface free of contamination, especially contamination due to humidity in the ambient air can remain between the layers and seriously lower the quality of the sample. To remove this pollution, the sample can be annealed\cite{lin_graphene_2012}. During annealing, the sample is placed in an annealing oven. While maintaining a high vacuum of 10$^{-3}$ mbar, the oven heats the sample to 250°C for three hours. Other recipes, that use higher or lower temperatures or longer annealing times can work just as well. Since the hot pick-up technique should keep the \tmdg surfaces clean of anything but the ambient air, the only concern is water, which is removed more easily than other contaminands. 
+More aggressive recipes, that work at higher temperatures or for longer times to remove also polymer contaminations that arise from contact to the stamp and therefore have a limited advantage over milder annealing conditions, but raise the risk of damaging the sample through temperature induced strain, that can potentially rip the \tmdg flakes.
 
-Different groups report different recipes for this procedure(Referenzen). During the hot pick-up method the \tmd-flakes are never in contact with anything but ambient air and cleanly cleaved \hbn-interfaces. More aggressive recipes, that work at higher temperatures or for longer times to remove also contaminations that arise from the stamp therefore have a limited advantage over milder annealing conditions.
+\section{Electrical characterization}
+
+To assess the quality of the the gate structure, its breakdown voltage has to be determined. This is the voltage between top gate and back gate, at which the leakage current starts to rise exponentially by forming conducting channels through the dielectric, that are self-sustaining and lift the conductance permanently\cite{klein_maximum_1966}. This breakdown voltage complicated to predict, as it is a nonlinear effect mainly caused by faults in the \sio layer. Thus it does not only depend on the thickness of the dielectric but also on the area of the top gate, because the statistical chance of a conducting channel forming is higher the more area of the sample is covered with conducting material. Additionally the rather violent ohmic contacting of the backgate can also damage the dielectric and lower the breakdown voltage. Therefore each sample has to be classified before being used to tune the charge density in spectroscopy. The dielectric in samples used throughout this thesis had a thickness of 50 nm or 90 nm, corresponding through a predicted breakdown voltage of 47.5 V or 85.5 V respectively. To assert these values, the leakage currents have to be monitored while ramping up the voltage. Before breakdown these currents are of the order of 100 pA to 1 nA and can be measured using a lock-in amplifier. A constant voltage across the desired range of operation ({\small$\pm $}30V) is added to a small \textsc{ac}-voltage of small amplitude ($U_0 = $ 10 mV$_{pp}$, $f = $ 77.1 Hz). A diagram of the circuitry is drawn in figure \ref{cv}. The real part of the resulting current is the resistive current, or leakage and the imaginary part is proportional to the capacity. Both parts can be measured and monitored in the lock-in amplifier. The \textsc{dc}-voltage is ramped until the leakage rises exponentially. At this point, the currents are still small enough to not inflict permanent damage to the dielectric and give the safe range of positive ad negative voltages during operation during the experiment.
+
+\begin{figure}
+	\centering
+	\resizebox{!}{150pt}{%
+	\begin{tikzpicture}[scale=0.62, every node/.append style={transform shape}]
+	\begin{circuitikz}
+		\draw (0,0) to[short] (0,0);
+		\draw 
+		(0,6) to[short, o-] (0,3)
+		(0,3) to[R, l=$10k\Omega$,-*] (2,3) 
+		(2,1) to[C, l=$2.2 \mu$F] (2,3) 
+		(2,1) node[ground]{}
+		(2,3) to[R, l=$100k\Omega$] (4,3) -- (7,3)
+		(5,3) to[C, l=$0.68\mu$F,*-] (5,5)
+		(5,5) to[short, -o] (5,6)
+		(7,3) to[short, -o] (7,2)
+		(8,2) to[short, o-] (8,3) -- (10,3)
+		(7,6) to[short, o-] (7,5)
+			 to[short] (8,5)
+		(8,5) to[short, -o] (8,6)
+		(10,3) to[short, -o] (10,6)
+		;
+		\node at (7.5,4.7) {$77.1$Hz};
+		\node at (6.15,2) {Topgate};
+		\node at (9,2) {Backgate};
+		\draw (-0.4,5.5) -- (-0.4,7) -- (2.2,7) -- (2.2,5.5) -- (-0.4,5.5);
+		\draw (4.6,5.5) -- (4.6,7) -- (7.4,7) -- (7.4,5.5) -- (4.6,5.5);
+		\draw (7.6,5.5) -- (7.6,7) -- (10.4,7) -- (10.4,5.5) -- (7.6,5.5);
+		\node[align=left] at (1,6.5) {DC-Voltage\\source};
+		\node[align=left] at (6.1,6.5) {AC-function\\generator};
+		\node[align=left] at (8.9,6.5) {Lock-in\\amplifier};
+	\end{circuitikz}
+
+	\end{tikzpicture}
+	}
+	\caption{Diagram for the \textsc{cv}-measurement. Using a lock-in amplifier and a small \textsc{ac} voltage even very small resistive currents leaking through the samples dielectric can be measured. This way, the maximum \textsc{dc} voltage at the gate can be obtained, by ramping a \textsc{dc} voltage source until the resistive current starts to rise exponentially.}\label{cv}
+\end{figure}

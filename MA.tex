@@ -1,7 +1,9 @@
 \documentclass{scrbook}
 \usepackage[ngerman, main=english]{babel}
 \usepackage{fontspec}
+
 \usepackage{amsmath}
+\usepackage{mathrsfs}
 \usepackage{csquotes}
 \usepackage{amssymb}
 \usepackage{float}
@@ -11,10 +13,16 @@
 \usepackage[toc, page]{appendix}
 \usepackage{subcaption}
 \usepackage{caption}
+\usepackage{textcomp}
 \usepackage[export]{adjustbox}
 \usepackage{pict2e}
 \usepackage{tikz}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
 \usepackage[european]{circuitikz}
+\usepackage{xcolor}
 \captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
  \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \usepackage{scalerel}
@@ -23,6 +31,7 @@
 \let\[\myequation
 \let\]\myendequation
 
+\newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\hbn}{{\footnotesize h}\textsc{bn}}
 \newcommand{\hbng}{{\footnotesize h}\textsc{bn}\ }
 \newcommand{\tmd}{\textsc{tmd}}
@@ -34,7 +43,11 @@
 \newcommand{\sio}{\textsc{s}{\footnotesize i}\textsc{o}$_{\scaleto{2}{4pt}}$\ }
 \newcommand{\ws}{\textsc{w}\textsc{s}$_{\scaleto{2}{4pt}}$\ }
 \newcommand{\wse}{\textsc{w}\textsc{s}{\footnotesize e}$_{\scaleto{2}{4pt}}$\ }
+\newcommand{\mos}{\textsc{m}{\footnotesize o}\textsc{s}$_{\scaleto{2}{4pt}}$\ }
 \newcommand{\pl}{\textsc{pl}\ }
+\newcommand{\mbeq}{\overset{!}{=}}
+\newcommand{\sigp}{\sigma$^+$}
+\newcommand{\sigm}{\sigma$^-$}
 
 \usepackage{mathpazo}
 %\setsansfont{[futura_medium_bt.ttf]}
@@ -63,18 +76,10 @@
 \begin{document}
 \maketitle
 \tableofcontents
-\chapter{Introduction}
+\input{introduction}
 \input{theory}
 %\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
-	\section{Crystal structure and symmetries}
-	\section{Electronic bandstructure and spin orbit coupling}
-	\section{Excitons in \textsc{tmd}s}
-		\subsection{Binding energy}
-		\subsection{Phonons and dark states}
-		\subsection{Trions}
-	\section{The Valley Zeeman Effect}
-	\section{Bilayer WSe$_2$}
-\chapter{Fabrication of field effect structures}
+\chapter{Fabrication of field effect structures}\label{exfoliation}
 	\input{Exfoliation.tex}
 %\chapter{Experimental methods and results}
 \input{experiment.tex}
