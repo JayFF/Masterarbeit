@@ -8,7 +8,7 @@
 \usepackage{amssymb}
 \usepackage{float}
 \usepackage{hyperref}
-\usepackage{cleveref}%kit_compile
+\usepackage{cleveref}
 \usepackage{nicefrac}
 \usepackage[toc, page]{appendix}
 \usepackage{subcaption}
@@ -56,8 +56,8 @@
 % ItalicFont={Futura_Light_Italic_font.ttf},
 % BoldItalicFont={[Futura_Bold_Italic_font.ttf]}
 % ]{[futura_light_bt.ttf]}
-\setmainfont[Numbers=OldStyle]{Linux Libertine O}
-\setkomafont{sectioning}{\scshape}
+\setmainfont[Numbers={Proportional,OldStyle}]{Linux Libertine O}
+\setkomafont{sectioning}{\scshape\addfontfeatures{Numbers=Lining}}
 \setkomafont{title}{\scshape}
 %\setkomafont{section}{\rmfamily}
 
@@ -79,8 +79,7 @@
 \input{introduction}
 \input{theory}
 %\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
-\chapter{Fabrication of field effect structures}\label{exfoliation}
-	\input{Exfoliation.tex}
+\input{Exfoliation.tex}
 %\chapter{Experimental methods and results}
 \input{experiment.tex}
 
