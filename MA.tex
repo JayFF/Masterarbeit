@@ -23,6 +23,7 @@
 }
 \usepackage[european]{circuitikz}
 \usepackage{xcolor}
+\usepackage{pgfornament}
 \captionsetup[subfigure]{labelfont=bf,labelformat=simple,textfont=normalfont,singlelinecheck=off,justification=raggedright}
  \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \usepackage{scalerel}
@@ -71,16 +72,20 @@
 
 \renewcommand{\autodot}{}
 
-\title{Fancy Masterarbeit of Death}
+\newcommand{\titleen}{Spectroscopy of gate-tunable\\ tungsten-diselenide monolayers}
+\newcommand{\titlede}{Spectroscopie von ladungsdurchstimmbaren wolfram-diselenid einzellagen}
+\title{Spectroscopy of gate-tunable tungsten-diselenide monolayers}
+\subtitle{Master's Thesis}
 \author{Jonathan Förste}
 
 \begin{document}
-\maketitle
+%\maketitle
+\input{titlepage}
 \input{abstract}
 \tableofcontents
 \input{introduction}
 \input{theory}
-\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
+%\chapter{Physical Properties of Transision Metal Dichalcogenide Monolayers}
 \input{Exfoliation.tex}
 %\chapter{Experimental methods and results}
 \input{experiment.tex}
