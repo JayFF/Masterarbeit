@@ -100,6 +100,39 @@ The reflection spectrum can be seen in figure \ref{rfspectrum}. The neutral spec
 
 
 \section{Measuring the valley zeeman effect}
+
+As described in section \ref{zeeman} the band gap and exciton energies in \tmds shift when exposed to an out-of-plane magnetic field. These shifts are reversed in light of opposite helicity and differ for different types of excitonic processes. Measuring the splitting, and quantifying it through the $g$-factor can yield a deeper insight in the nature of the spectral features. Figure \ref{waterfall} and \ref{waterfallRF} show the \pl and reflection spectra for different gate voltages at 0 and 8 T. Because of different magnetic shifts of the different peaks, looking at \sigma$^+$ and \sigma$^-$ polarized spectra at high magnetic field can help to resolve features, that are otherwise hidden by inhomogeneous broadening. The first interesting feature to study in this fashion is the two trion peaks ($X^-$). At 8 T they reveal significant change in their splitting, merging to one peak in \sigp while showing a clear splitting in \sigm. As will be discussed later on, this difference is so far unaccounted for but may be coupled to the asymmetry in intensity when the gate-voltage is swept.
+
+The trion fine structure is a result of electron-electron exchange interaction. The singlet-state consists of an exciton and an electron of opposite spin at the $K$-point while the triplet state involves an additional electron in the $K'$-valley, but with the same spin component as the electron in the exciton. The spin-parallel triplet state has a lower binding energy, which allows to also observe the different behavior with regards to the charge density. At high negative gate voltages, both peaks are less intense with the blue peak losing signal much more rapidly. The reasons for that are speculative at best. Recent measurements in \ws point to the singlet state being stable only at low temperatures\cite{vaclavkova_singlet_2018}. Similarly, the triplet state in \wse could be more sensitive to large densities of free charge carriers. How this connects to their difference in magnetic moment is unclear.
+
+\subsection{G-factors}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_X}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_T}
+	\end{subfigure}
+	\caption{Exciton valley splitting in \pl and reflection. \textbf{A} The $g$-factor of the neutral exciton is in good agreement with previous studies. The fit of the reflection measurement has a large error bar, because of the complicated lineshape. Since the variance of the data points is low, this seems to be a systematic error. \textbf{B} The trion peak can only be reliably modeled in the reflection spectrum because of insufficient signal-to-noise ratio and limitations of the linewidth. The fits suggest a different $g$-factor for the two subfeatures.}
+	\label{Xfits}
+\end{figure}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_R1}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{G_R2}
+	\end{subfigure}
+	\caption{Valley splitting of phonon replica. \textbf{A} The intense $R_1$ peak and its charged counterpart $R^-_1$ show a similar $g$-factor, suggesting the same origin. This is consistent with the proposed model, that identifies the peaks as acoustic sidebands of momentum-indirect excitons in the $Q$-valley. $R_1$ is of particular interest, because this feature conventionally is attributed to the trion. The strong difference in the $g$-factor however suggests a different origin than the trion feature, even though they share the same energy in the spectrum. \textbf{B} The neutral peak $R_2$ was previously identified as a phonon sideband of the $K'$-indirect exciton. The high $g$-factor however does not offer a direct argument to support this assumption. However, the charged counterpart $R^-_2$ has a similar $g$-factor as was previously measured for $D$, which underscores the assumption of the feature being the charged spin-unlike exciton in $K$. } 
+	\label{Rfits}
+\end{figure}
+
 \begin{figure}[t]
 	\begin{subfigure}{0.32\textwidth}
 		\caption{}
@@ -132,53 +165,28 @@ The reflection spectrum can be seen in figure \ref{rfspectrum}. The neutral spec
 	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum, towards the positive end, the replica peaks $R_1$ and $R_2$ get significantly skewed at 8 T, pointing towards several underlying peaks with different $g$-factors. The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfallRF}
 \end{figure}
 
-As described in section \ref{zeeman} the band gap and exciton energies in \tmds shift when exposed to an out-of-plane magnetic field. These shifts are reversed in light of opposite helicity and differ for different types of excitonic processes. Measuring the splitting, and quantifying it through the $g$-factor can yield a deeper insight in the nature of the spectral features. Figure \ref{waterfall} and \ref{waterfallRF} show the \pl and reflection spectra for different gate voltages at 0 and 8 T. Because of different magnetic shifts of the different peaks, looking at \sigma$^+$ and \sigma$^-$ polarized spectra at high magnetic field can help to resolve features, that are otherwise hidden by inhomogeneous broadening. The first interesting feature to study in this fashion is the two trion peaks ($X^-$). At 8 T they reveal significant change in their splitting, merging to one peak in \sigp while showing a clear splitting in \sigm. The trion fine structure as the result of electron-electron exchange interaction could yield an explanation for this difference. The singlet-state consists of an exciton and an electron of opposite spin at the $K$-point while the triplet state involves an additional electron in the $K'$-valley, but with the same spin component as the electron in the tighly bound exciton. Because these valleys shift in opposite directions, a different overall shift makes sense. This allows to also observe the different behavior with regards to the charge density. At high negative gate voltages, both peaks are less intense with the blue peak losing signal much more rapidly. The reasons for that are speculative at best. Recent measurements in \ws point to the singlet state being stable only at low temperatures\cite{vaclavkova_singlet_2018}. Similarly, the triplet state in \wse could be more sensitive to large densities of free charge carriers. 
-
-\subsection{G-factors}
-
 The magnetic splitting $\Delta E$ can be quantified by the $g$-factor. Because $\Delta E$ is linear in magnetic field strength $B$, the peak positions can be fitted using simple linear regression where the slope is connected to the $g$-factor in the following fashion:
 
-\[ g =  \frac{1}{\mu_B}\underbrace{\frac{\Delta E}{\Delta B}}_{slope} \]
+\begin{align}
+	g &=  \frac{1}{\mu_B}\underbrace{\frac{\Delta E}{\Delta B}}_{slope} \\
+	\Delta E &= E_{\sigma^+} - E_{\sigma^-}
+\end{align}
 
-Because the splitting is a lot smaller than the linewidth -- 0.25 meV / T at a linewidth of 7 meV -- the peaks have to be fitted using the procedures described in \ref{fits} to obtain a low error and therefore an accurate estimate for the $g$-factor. Not all features can be resolved well enough, because of either a bad signal to noise ratio or linewidth-related blending with other peaks. The shifts and calculated $g$-factors can be seen in figures \ref{X_fits} and \ref{R_fits}.
-
-\subsubsection{Exiton \& trion}
-
-\begin{figure}[t]
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{G_X}
-	\end{subfigure}
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{G_T}
-	\end{subfigure}
-	\caption{Exciton valley splitting in \pl and reflection. \textbf{A} The $g$-factor of the neutral exciton is in good agreement with previous studies. The fit of the reflection measurement has a large error bar, because of the complicated lineshape. Since the variance of the data points is low, this seems to be a systematic error. \textbf{B} The trion peak can only be reliably modeled in the reflection spectrum because of insufficient signal-to-noise ratio and limitations of the linewidth. The fits suggest a different $g$-factor for the two subfeatures.}
-	\label{Xfits}
-\end{figure}
+Because the splitting is a lot smaller than the linewidth---0.25 meV / T at a linewidth of 7 meV---the peaks have to be fitted using the procedures described in \ref{fits} to obtain a low error and therefore an accurate estimate for the $g$-factor. Not all features can be resolved well enough, because of either a bad signal to noise ratio or linewidth-related blending with other peaks.
 
 The $g$-factor of the neutral exiton and trion resonances can be measured in both \pl and reflection spectroscopy (see figure \ref{Xfits}). This helps to cross-check experimental results. In case of the neutral exciton, both methods yield a $g$-factor that aligns well with many previous studies \cite{plechinger_excitonic_2016, stier_exciton_2016, srivastava_valley_2015, mitioglu_magnetoexcitons_2016}and also with each other. The fits of the reflection spectra carry a relatively high error. The error bars were estimated by eye using plots to determine deviation of the lineshape from the peaks maxima and minima. Because these errors are much higher than the standard deviation it is fair to say, that they only provide a coarse upper bound. They most likely origin from the substantial deviation of the lineshape from the ideal fano-resonance on the blue and red shoulder.
 
-The trion resonance is much more easy to measure in reflection. The reason for this is partly the bad signal to noise ratio of its \pl signal, that can be linked to the longer lifetime of the charged state\cite{hao_trion_2017}. But another factor seems to be the limited resolution due to the linewidth of the peaks. While this has roughly the same valuees in reflection and \pl, the peaks in the reflection spectrum are seperated by roughly 2 meV more, than in \pl. While the trion features still carry a significant error, they clearly show a different $g$-factor for each of its features. This has also been observed in \ws samples at even higher magnetic fields, suggesting a strong influence of the excess electron towards the total magnetic moment \cite{plechinger_excitonic_2016}.
+The trion resonance is much more easy to measure in reflection. The reason for this is partly the bad signal to noise ratio of its \pl signal, that can be linked to the longer lifetime of the charged state\cite{hao_trion_2017}. But another factor seems to be the limited resolution due to the linewidth of the peaks. The two peaks in the reflection spectrum are seperated by roughly 2 meV more, than in \pl. The reason for that could simply be the fact, that the lorentzian fit does not really reflect the proper lineshape in the reflection spectrum. Fitting the trion absorption with a double fano lineshape could possibly resolve this difference. For the calculation of the $g$-factor this should however not make a difference.
 
-\subsubsection{Phonon sidebands}
+While the trion fits carry a significant error---also in reflection---they clearly show a different $g$-factor for each of its features. Since the decay of the trion leaves one free electron behind, it makes sense, that the trion features show the same $g$-factor as $X$. Nonetheless, this difference has also been observed in \ws samples at even higher magnetic fields, suggesting a non negligible influence of the excess electron towards the total magnetic moment\cite{plechinger_excitonic_2016}.
 
-\begin{figure}[t]
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{G_R1}
-	\end{subfigure}
-	\begin{subfigure}{0.49\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{G_R2}
-	\end{subfigure}
-	\caption{Valley splitting of phonon replica. \textbf{A} The intense $R_1$ peak and its charged counterpart $R^-_1$ show a similar $g$-factor, suggesting the same origin. This is consistent with the proposed model, that identifies the peaks as acoustic sidebands of momentum-indirect excitons in the $Q$-valley. $R_1$ is of particular interest, because this feature conventionally is attributed to the trion. The strong difference in the $g$-factor however suggests a different origin than the trion feature, even though they share the same energy in the spectrum. \textbf{B} The neutral peak $R_2$ was previously identified as a phonon sideband of the $K'$-indirect exciton. The high $g$-factor however does not offer a direct argument to support this assumption. However, the charged counterpart $R^-_2$ has a similar $g$-factor as was previously measured for $D$, which underscores the assumption of the feature being the charged spin-unlike exciton in $K$. } 
-	\label{Rfits}
-\end{figure}
+Having the uncertainty in mind we can compare the trion $g$-factor to the strong $R_1$ peak in the neutral spectrum (see figure \ref{Rfits}). Because it has the same energy as the trion, it is easy to misidentify both features as the same peak and attribute them to the trion. Especially if the sample has no gate control intrinsic electron doping offers a qualitative but not accurate argument for this identification. The magnetic field measuements however show a clear difference between their respective valley splitting. As stated the $g$-factor of the trion is hard to determine in \pl and has a large error. However, it is bound between 0 and around 6 which is half of the $g$-factor of $R_1$. The strong mismatch can also be observed qualitatively in \ref{waterfall}.
 
-Measuring the $g$-factors of phonon sidebands is of particular importance because it adds another data point to find the origin of the respective peaks (see figure \ref{Rfits}). The first interesting conclusion in that regard is the peak $R_1$ that is energetically close to the trion and hence has been identified as such in a number of publications. In magnetic field however the features in the negative and neutral regime show much different valley splitting. The $g$-factor of the trion is hard to determine in \pl\!. However, despite the large errors on the data points, the measurement at leaves gives some bounds to distinguish the peak from $R_1$. The shift in the reflection measurement backs up this argument and shows a $g$-factor, that is slighly larger than that of the exciton.
+Unfortunately this leaves the question about the origin of the high $g$-factor of $R_1$. As briefly discussed in section \ref{zeeman} the momentum indirect exciton in $Q$ should not have a $g$-factor at all, when only looking at the orbital and spin contributions. The effective mass for electrons at the $Q$-point has however not been calculated for this thesis and therefore the theoretical model predicting the $g$-factor still has to be completed. This is similar for the $K'$ indirect exciton and the corresponding peak $R_2$, that should be composed of its accoustic phonon sidebands. When counting the oribital and spin contributions it should have the same $g$-factor as $X$. That this is not the case means, that a more thorough theoretical understanding is necessairy to verify or falsify the identification of the peak.
 
-However, these values in itself open up more questions.
+When looking at the charged spectrum the $g$-factor of $R_1^-$ matches that of $R_1$ within the 2\sigma-range. Because their distance in energy to $X$ and $X^-$ also fits it is reasonable to regard the peaks as neutral and charged version of the same momentum-indirect exciton in $Q$.
+
+As discussed in the previous section the second peak $R_2^-$ energetically matches the spin-unlike but direct dark exciton $D$. Therefore it is no wonder, that this is reflected in the significantly smaller $g$-factor with respect to the phonon sideband peaks. While it is higher than the value predicted in section \ref{zeeman} it is close to what was reported for the neutral dark exciton\cite{robert_fine_2017}.
 
 \section{Comparison to bilayer ws\textup{e}$_2$}
 
