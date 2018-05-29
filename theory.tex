@@ -30,15 +30,16 @@ This has two important consequences, regarding the electronic band structure. As
 
 \section{Excitons in \tmdg monolayers}\label{theory_exciton}
 
-What sets the light emission of \tmds apart from conventional direct band gap semiconductors is, that even at room temperature, the photoluminescence (\pl\!) is dominated by the recombination of excitons. Excitons are bound pairs of an electron and a corresponding hole. In bulk semiconductors this bound state has a very low binding energy due to dielectric screening, confining this phenomenon to the regime of very low temperatures. The 2\textsc{d}-geometry of \tmdg monolayers however effectively reduces the screening effect, resulting in strong Coulomb interaction between electron and hole. This raises the exciton binding energy to approximately 500 meV, which enables excitons to form well above room temperature\cite{chernikov_exciton_2014}.
-The strong Coulomb interaction also means that excitons have a much shorter lifetime than the valley lifetime---the timescale of coupling between the valleys---preserving the helicity in their emission once they decay. This is called "valley polarization".
+When an electron absorbs a photon of an energy higher than the band gapof a semiuconductor, it gains enough energy to be elevated to the contuction band and can thus move freely through the crystal. Other electrons can hop to the vacancy making this hole just as free as the excited electron. It also effectively acts like a positive charge, which means that there act Coulomb forces between the free electron and the hole. When this interaction is strong enough to overcome thermal excitations, the two quasiparticles can enter a bound state, called ``exciton''. In a bulk semiconductor electrons in between electron and hole weaken this interaction and thus result in a low exciton binding energy. The direct semiconductor \textsc{g}{\footnotesize a}\textsc{a}{\footnotesize s} for example exhibits an exciton binding energy of just 4.2 meV. Doing a rough calculation with $T=E_{binding}/k_B$ this corresponds to a temperature of 48 K limiting exciton formation to samples cooled well below the temperature of liquid nitrogen.
+The geometry of \tmdg monolayers however effectively reduces the screening effect. Because the movement of electrons and holes is confined to two dimensions, the electric field density in the material drops significantly and the strong Coulomb interaction between the free quasiparticles raises the exciton binding energy to about 500 meV\cite{chernikov_exciton_2014}, roughly corresponding to nearly 6000 K. Therefore excitons can be excited at room temperature. Their strong interaction results in an exciton Bohr radius of close to 1 nm and a very short lifetime in the order of picoseconds. Hence, the recombination of excitons with emission of a photon is the most efficient optical decay chanel and thus dominates the photoluminescence spectrum.
+The decay also happens much faster than the so called valley lifetime---the timescale of coupling between the valleys---preserving the helicity in their emission once they decay. This is called "valley polarization".
 The thinness of \tmdg monolayers has additional implications. Because the electric dipole field of the exciton extends beyond the boundaries of the crystal, the dielectric environment has a big influence on the optical spectrum\cite{stier_probing_2016, borghardt_engineering_2017, jakubczyk_impact_2018}. Impurities such as microscopic water droplets or dangling bonds of silicon oxide can induce localized potentials, broadening the linewidth of the \pl features, thus complicating spectroscopic studies. On the other hand, this high sensitivity could be used in quantum sensing applications to optically probe or visualize electric or magnetic proximity effects\cite{peng_valley_2017, zhao_enhanced_2017, smolenski_tuning_2016, neumann_opto-valleytronic_2017}.
 
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=.7\textwidth]{bandstructure}
-\caption{Band structure for \mos and \wse mono- and bilayers. In the limit of a single atomic layer \tmds form a direct band gap at the $K$-point and the valence band is strongly split due to spin-orbit coupling. Graphic taken from \cite{zibouche_transition-metal_2014_2}.}
+\caption{Band structure for \mos and \wse mono- and bilayers calculated for room temperature. In the limit of a single atomic layer \tmds form a direct band gap at the $K$-point and the valence band is strongly split due to spin-orbit coupling. Graphic taken from \cite{zibouche_transition-metal_2014_2}.}
 \label{bandgap}
 
 \end{figure}
@@ -91,6 +92,26 @@ Because of the hexagonal structure of the Brilloin zone $\vec{k}_K - \vec{k}_{K'
 \cite{van_der_donck_excitons_2018} 
 
 \section{The valley zeeman effect}\label{zeeman}
+
+\begin{figure}[t]
+\centering
+\begin{subfigure}{0.99\textwidth}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{valleyzeeman}};
+	\node at (60pt, 160pt) {$E_S$};
+	\node at (140pt, 105pt) {$E_S$};
+	\node at (26pt, 160pt) {$E_{\mathrm{orb}}$};
+	\node at (340pt, 70pt) {$E_S$};
+	\node at (390pt, 155pt) {$E_S$};
+	\node at (390pt, 70pt) {$E_{\mathrm{orb}}$};
+	\node at (253pt, 200pt) {$K$};
+	\node at (165pt, 200pt) {$Q$};
+
+	\end{tikzpicture}
+\end{subfigure}
+\caption{Diagram of orbital and spin contributions to the valley Zeeman effect. For excitons with parallel spin, the corresponding shift $E_S$ of conduction and valence band cancels out. The shift for the direct spin-like exciton therefore depends mostly on the magnetic shift of the orbitals $E_{\mathrm{orb}}$ that at the $K$ point is non-vanishing only in the valence band. The spin-unlike direct exciton however has a strong spin contributioin which in theory doubles its $g$-factor. For momentum-indirect excitons in $Q$ the $g$-factor almost entirely due to the difference in effective mass between hole and electron, because both $E_S$ and $E_{\mathrm{orb}}$ shift in the same direction in the conduction and valence band.}
+	\label{flakes}
+\end{figure}
 
 A splitting of spectral lines in presence of a magnetic field has been studied for over a hundred years and is called the Zeeman effect, named after the scientist first measuring it in the spectral lines of sodium. The shift of different energy levels in an atom results from the magnetic moment of the state, caused by its orbital angular momentum and spin. Solid crystals are essentially large ensembles of atoms that merge atomic orbitals to form the electronic band structure, that can shift in a magnetic field just as orbitals of single atoms. The 2\textsc{d}-nature of \tmdg monolayers and their broken degeneracy of the $K$ and $K'$ point gives rise to a meta-phenomenon called the ``valley Zeeman effect'', that leads to a shift in the band gap energy that is different for both valleys, leading to a split of spectral lines with different circular polarization\cite{srivastava_valley_2015, aivazian_magnetic_2015}. In the vicinity of the $K$ point the band structure is dominated by the large $d$-orbitals of the transition metal atoms. The hybridized $d_{x^2-y^2} \pm id_{xy}$ orbitals give the valence band an oribtal angular momentum along $z$ of $l_z=2\hbar$ that leads to a magnetic dipole moment of $\mu_{K,orb}=2\mu_B$. The conduction band is primarily formed by the $d_{z^2}$-orbital that has no out-of-plane angular momentum and therefore no magnetic moment along $z$. This leads to an asymmetric shift in the conduction and valence band and therefore to a shift of the band gap energy. The \tmd-geometry confines electron movement to the 2\textsc{d} plane, forcing the magnetic moment to either point upwards or downwards out of plane. This direction is exactly opposite at the $K$ and $K'$ points, shifting the valence band energy, and thus the band-gap in opposite directions. The total orbital magnetic moment at $K$ has a value of $\mu_{K,orb}=2\mu_B$. For the bright spin-like exciton transition the this leads to a valley splitting of $\Delta_{K,K'}=4\mu_BB_z$. The prefactor in this equation is often called the $g$-factor and is given in units of the Bohr magneton $\mu_B=e\hbar/2m_e$. As it turns out, this first simple result is already in good agreement with experimental studies (see chapter \ref{spectroscopy}) but this is only because for this particular state, other contributions are small or cancel each other out. The main additional contributions are the spin of electron and hole and their respective effective masses. %For excitons that only involve charge carriers at the $K$ or $K'$ point, 
 This leads to a the following formula:
