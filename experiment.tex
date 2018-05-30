@@ -11,6 +11,19 @@ The goal of this thesis was the fabrication of gate-tunable \tmdg devices that s
 	\label{opticalsetup}
 \end{figure}
 
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{ple_2s}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{power}
+	\end{subfigure}
+	\caption{\textbf{A} 1.851 meV 669.3 nm\textbf{B} 4.3, 8.0, 12.0 meV / 8.9linewidth} 
+	\label{bilayerthermal}
+\end{figure}
+
 The optical setup is a confocal microscope operated at cryogenic temperatures. This means that the sample is placed in the focal plane of a low temperature objective and insteat of capturing a wide field image of the sample only the signal from the focal point is collected. With a high quality objective the spot is only limited by the fundamental diffraction limit, yielding high spatial resolution. The other advantage is the high ratio between excitation power and collected signal, which extends the limits on integration time and thus the signal to noise ratio. A diagram of the complete setup can be seen in figure \ref{opticalsetup}. The excitation beam from a laser is guided to the so called excitation arm with a single mode optical fibre. It passes though a linear plolarizer to define a polarization axis and is reflected to the objective by a beam-sampler. To analyze circular dichroism in the detected beam, it passes through a quarter waveplate and another linear polarizer before being coupled into another optical fibre, that is connected to a spectrometer. The sample is mounted on a piezo nanopositioner inside a cryostat or a container of liquid helium and connected to a voltage source, that can tune the charge density in the \tmdg flake. A strong, homogenious magnetic field along the $z$-axis of the sample can be supplied by a superconducting magnet.
 
 For \pl spectroscopy, the sample is excited by a laser beam with a narrow frequency profile and high power. The optimal parameters are determined by different factors. The optimal laser power depends on the obseved features. At a very low power emission from quantum dots can be observed, that saturate and bleach at a higher intensity---this is desirable in this case, as the observed spectrum should be as representative as possible. If the power is to high though, non-linear effects such as the formation of bi-excitons can start to play a role and the exciton emission saturates. Also, the linewidth\red{Hier noch was schreiben} Because this beam has a much higher intensity, than the collected \textsc{pl} it is tuned to a higher frequency than the main exciton resonance, to obtain a complete spectrum without features from the excitation beam. To avoid stray light inside the spectrometer a longpass filter additionally blocks the laser before entering the detection fiber. A shortpass filter in the excitation arm blocks Raman modes of the optical fiber, a result from high excitation power, that can have frequencies overlapping with the \pl of the sample. 
@@ -193,14 +206,26 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 \begin{figure}[t]
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
-		\includegraphics[width=\textwidth]{bilayer_0T}
+		\includegraphics[height=0.65\textwidth]{bilayer_0T}
 	\end{subfigure}
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
-		\includegraphics[width=\textwidth]{bilayer_-8T}
+		\includegraphics[height=0.65\textwidth]{bilayer_-8T}
 	\end{subfigure}
 	\caption{} 
 	\label{bilayerthermal}
+\end{figure}
+\begin{figure}[t]
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{BL_lowhigh}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\caption{}
+		\includegraphics[height=0.65\textwidth]{BL_sweep}
+	\end{subfigure}
+	\caption{} 
+	\label{bilayervoltsweep}
 \end{figure}
 
 As pointed out in section \ref{bilayer_theory}, bilayer \wse has an indirect band gap and most of the weaker \pl can be attributed to the decay of momentum-indirect excitons.
