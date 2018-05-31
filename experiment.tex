@@ -26,7 +26,7 @@ The goal of this thesis was the fabrication of gate-tunable \tmdg devices that s
 
 The optical setup is a confocal microscope operated at cryogenic temperatures. This means that the sample is placed in the focal plane of a low temperature objective and insteat of capturing a wide field image of the sample only the signal from the focal point is collected. With a high quality objective the spot is only limited by the fundamental diffraction limit, yielding high spatial resolution. The other advantage is the high ratio between excitation power and collected signal, which extends the limits on integration time and thus the signal to noise ratio. A diagram of the complete setup can be seen in figure \ref{opticalsetup}. The excitation beam from a laser is guided to the so called excitation arm with a single mode optical fibre. It passes though a linear plolarizer to define a polarization axis and is reflected to the objective by a beam-sampler. To analyze circular dichroism in the detected beam, it passes through a quarter waveplate and another linear polarizer before being coupled into another optical fibre, that is connected to a spectrometer. The sample is mounted on a piezo nanopositioner inside a cryostat or a container of liquid helium and connected to a voltage source, that can tune the charge density in the \tmdg flake. A strong, homogenious magnetic field along the $z$-axis of the sample can be supplied by a superconducting magnet.
 
-For \pl spectroscopy, the sample is excited by a laser beam with a narrow frequency profile and high power. The optimal parameters are determined by different factors. The optimal laser power depends on the obseved features. At a very low power emission from quantum dots can be observed, that saturate and bleach at a higher intensity---this is desirable in this case, as the observed spectrum should be as representative as possible. If the power is to high though, non-linear effects such as the formation of bi-excitons can start to play a role and the exciton emission saturates. Also, the linewidth\red{Hier noch was schreiben} Because this beam has a much higher intensity, than the collected \textsc{pl} it is tuned to a higher frequency than the main exciton resonance, to obtain a complete spectrum without features from the excitation beam. To avoid stray light inside the spectrometer a longpass filter additionally blocks the laser before entering the detection fiber. A shortpass filter in the excitation arm blocks Raman modes of the optical fiber, a result from high excitation power, that can have frequencies overlapping with the \pl of the sample. 
+For \pl spectroscopy, the sample is excited by a laser beam with a narrow frequency profile and high power. The optimal parameters are determined by different factors. The optimal laser power depends on the obseved features. At a very low power emission from quantum dots can be observed, that saturate and bleach at a higher intensity---this is desirable in this case, as the observed spectrum should be as representative as possible. If the power is to high though, non-linear effects such as the formation of bi-excitons can start to play a role and the exciton emission saturates. Also, the linewidth\red{Hier noch was schreiben} \cite{wang_photoinduced_2016,cunningham_photoinduced_2017}Because this beam has a much higher intensity, than the collected \textsc{pl} it is tuned to a higher frequency than the main exciton resonance, to obtain a complete spectrum without features from the excitation beam. To avoid stray light inside the spectrometer a longpass filter additionally blocks the laser before entering the detection fiber. A shortpass filter in the excitation arm blocks Raman modes of the optical fiber, a result from high excitation power, that can have frequencies overlapping with the \pl of the sample. 
 When the setup is operated for reflection spectroscopy these filters are omitted. Instead, the sample is illuminated with a broad band white light source at a low power. To find the signal, a background spectrum, recorded in absence of the \tmdg flake is substracted from the main spectrum.
 
 \[ 
@@ -146,38 +146,6 @@ The trion fine structure is a result of electron-electron exchange interaction. 
 	\label{Rfits}
 \end{figure}
 
-\begin{figure}[t]
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_0T}
-	\end{subfigure}
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_8T_sp}
-	\end{subfigure}
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_8T_sm}
-	\end{subfigure}
-	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum the dark exciton ($D$) lies to close to the strong phonon sideband $R_1$ to be resolved clearly. The strong splitting of this feature reveals $D$ more clearly in the \sigma$^+$-polarized spectrum at 8T (\red{gfactor}). The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfall}
-\end{figure}
-
-\begin{figure}[t]
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_0TRF}
-	\end{subfigure}
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_8TRF_sp}
-	\end{subfigure}
-	\begin{subfigure}{0.32\textwidth}
-		\caption{}
-		\includegraphics[width=\textwidth]{waterfall_8TRF_sm}
-	\end{subfigure}
-	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum, towards the positive end, the replica peaks $R_1$ and $R_2$ get significantly skewed at 8 T, pointing towards several underlying peaks with different $g$-factors. The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfallRF}
-\end{figure}
-
 The magnetic splitting $\Delta E$ can be quantified by the $g$-factor. Because $\Delta E$ is linear in magnetic field strength $B$, the peak positions can be fitted using simple linear regression where the slope is connected to the $g$-factor in the following fashion:
 
 \begin{align}
@@ -212,9 +180,10 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 		\caption{}
 		\includegraphics[height=0.65\textwidth]{bilayer_-8T}
 	\end{subfigure}
-	\caption{} 
+	\caption{\textsc{Pl} spectrum of bilayer \wse at 0 and -8 T. \textbf{A} Because of the indirect band gap, the \pl spectrum is mostly composed of phonon sidebands of momentum-indirect excitons. When identifying the two blue peaks ($R_A$/$R_O$) as the accoustic and optical sidebands of $Q$, with the corresponding hole in $K$, the zero-phonon line $Q_{ZP}$ lies 73 meV below the direct transition $X$, that is shifted by around 36 meV with respect to the monolayer. \textbf{B} In a strong magnetic field the valleys split as they to in the monolayer, but the population of the excition states is "thermal", meaning they distribute according to Boltsman statistics with higher population in the low energy states. Because the spectral lines should all originate from the same underlying excitonic state, the intensity ratio between them does not shift in magnetic field.} 
 	\label{bilayerthermal}
 \end{figure}
+
 \begin{figure}[t]
 	\begin{subfigure}{0.49\textwidth}
 		\caption{}
@@ -226,6 +195,38 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 	\end{subfigure}
 	\caption{} 
 	\label{bilayervoltsweep}
+\end{figure}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_0T}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8T_sp}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8T_sm}
+	\end{subfigure}
+	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum the dark exciton ($D$) lies to close to the strong phonon sideband $R_1$ to be resolved clearly. The strong splitting of this feature reveals $D$ more clearly in the \sigma$^+$-polarized spectrum at 8T (\red{gfactor}). The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfall}
+\end{figure}
+
+\begin{figure}[t]
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_0TRF}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8TRF_sp}
+	\end{subfigure}
+	\begin{subfigure}{0.32\textwidth}
+		\caption{}
+		\includegraphics[width=\textwidth]{waterfall_8TRF_sm}
+	\end{subfigure}
+	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum, towards the positive end, the replica peaks $R_1$ and $R_2$ get significantly skewed at 8 T, pointing towards several underlying peaks with different $g$-factors. The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfallRF}
 \end{figure}
 
 As pointed out in section \ref{bilayer_theory}, bilayer \wse has an indirect band gap and most of the weaker \pl can be attributed to the decay of momentum-indirect excitons.
