@@ -181,7 +181,7 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 		\caption{}
 		\includegraphics[height=0.65\textwidth]{bilayer_-8T}
 	\end{subfigure}
-	\caption{\textsc{Pl} spectrum of bilayer \wse at 0 and -8 T. \textbf{A} Because of the indirect band gap, the \pl spectrum is mostly composed of phonon sidebands of momentum-indirect excitons. When identifying the two blue peaks ($R_A$/$R_O$) as the accoustic and optical sidebands of $Q$, with the corresponding hole in $K$, the zero-phonon line $Q_{ZP}$ lies 73 meV below the direct transition $X$, that is shifted by around 36 meV with respect to the monolayer. \textbf{B} In a strong magnetic field the valleys split as they to in the monolayer, but the population of the excition states is "thermal", meaning they distribute according to Boltsman statistics with higher population in the low energy states. Because the spectral lines should all originate from the same underlying excitonic state, the intensity ratio between them does not shift in magnetic field.} 
+	\caption{\textsc{Pl} spectrum of bilayer \wse at 0 and -8 T. \textbf{A} Because of the indirect band gap, the \pl spectrum is mostly composed of phonon sidebands of momentum-indirect excitons. Because excitons with an electron in $Q$ and a hole in $K$ and $\Gamma$ have the lowest energy, they should also exhibit the highest population and contribute most to the spectral lines. The zero-phonon line of $Q\Gamma$ lies around 103 meV below the direct transition $X$, that is shifted by around 36 meV with respect to the monolayer. The \textsc{zpl} of $QK$ is around 30 meV above $Q\Gamma$. \textbf{B} In a strong magnetic field the valleys split as they to in the monolayer, but the population of the excition states is "thermal", meaning they distribute according to Boltsman statistics with higher population in the low energy states.} 
 	\label{bilayerthermal}
 \end{figure}
 
@@ -194,9 +194,25 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 		\caption{}
 		\includegraphics[height=0.65\textwidth]{BL_sweep}
 	\end{subfigure}
-	\caption{} 
+	\caption{Behavior of bilayer \wse at different doping levels. In a negative environment trions form analogous to the monolayer that cause the spectral lines to shift by the trion binding energy. \textbf{A} This is most clear for charged peak corresponding to accoustic sidebands of $Q\Gamma$ with a binding energy of 23 meV. \textbf{B} All other peaks also jump by the same energy.} 
 	\label{bilayervoltsweep}
 \end{figure}
+
+\begin{table}[t]
+	\centering
+	\begin{tabular}{@{}rrrrrrrcrrrrr@{}}
+		\toprule
+	& \multicolumn{7}{c}{Monolayer} & \multicolumn{4}{c}{Bilayer}\\
+	\cmidrule{2-8} \cmidrule{10-13}
+	 & $X$ & $R_1$ & $R_2$ & $X^-_1$ & $X^-_2$ & $R^-_1$ & $R^-_2$ && $QK_A$ & $QK_O$ & $Q\Gamma_A$ & $Q\Gamma_O$\\ \midrule
+	PL & 4.05& 11.50& 13.05 & --0.8& 4.8 & 12.22  & 9.16 && 12.12 & 10.59 & 9.55  & 11.90  \\
+	& ± 0.12 &  ± 0.12 & ± 0.60 &  ± 2.1 &  ± 2.1 & ± 0.60  & ± 0.85 &&  ± 0.17 & ± 0.24 & ± 0.35 & ± 0.1 \\
+	Refl. & 4.23 & - & - & 6.5 & 4.8 & - & - && - & - & - & - \\
+	& ± 0.86 & - & - & ± 1.0 & ± 0.8 & - & - && - & - & - & - \\ \bottomrule
+
+	\end{tabular}
+	\caption{Summary of $g$-factors for \wse mono- and bilayer, as measured on the same sample with corresponding errors. Since there was only one data-point for the bilayer errors on the $g$-factor are purely derived from the fitting parameters. Having 17 data-points for the monolayer computation means, that a more realistic error could be estimated by watching the variation from point to point.}\label{horsepoop}
+\end{table}
 
 \begin{figure}[t]
 	\begin{subfigure}{0.32\textwidth}
@@ -211,7 +227,7 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 		\caption{}
 		\includegraphics[width=\textwidth]{waterfall_8T_sm}
 	\end{subfigure}
-	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum the dark exciton ($D$) lies to close to the strong phonon sideband $R_1$ to be resolved clearly. The strong splitting of this feature reveals $D$ more clearly in the \sigma$^+$-polarized spectrum at 8T (\red{gfactor}). The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfall}
+	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. The transition between the strong phonon sideband $R_1$ to the trion $X^-$ can be observed. Appart from the exchange splitting of the trion, their different nature can be also seen by looking at the spectrum at 8 T. The splitting of $R_1$ is much stronger than that of $X^-$, such that in the transition around 1--5 V the trion appears as a red shoulder in $\sigma^+$ and a blue shoulder in $\sigma^-$. The two features of $X^-$ by themselves also behave very differently. Not only do they appear to have a different $g$-factor, but they also are very asymmetric with regards to their intensity and how it is lowered for high negative doping.}\label{waterfall}
 \end{figure}
 
 \begin{figure}[t]
@@ -227,7 +243,13 @@ As discussed in the previous section the second peak $R_2^-$ energetically match
 		\caption{}
 		\includegraphics[width=\textwidth]{waterfall_8TRF_sm}
 	\end{subfigure}
-	\caption{\pl spectra of \wse at high magnetic fields for different gate voltages. In the neutral spectrum, towards the positive end, the replica peaks $R_1$ and $R_2$ get significantly skewed at 8 T, pointing towards several underlying peaks with different $g$-factors. The trion peak in the negative regime is composed of at least two features. As can be seen these peaks have different $g$-factors as well, that lead to a wide split in \sigma$^+$ and merge to one feature in \sigma$^-$.}\label{waterfallRF}
+	\caption{Reflection spectra for different gate voltages at high magnetic fields. The comparison between $\sigma^+$ and $\sigma^-$ shows the asymmetry of the trion resonance, whose two features shift by a different ammount resulting in two different line shapes at 8 T. This reason for this difference in the $g$-factor has yet to be determined.}\label{waterfallRF}
 \end{figure}
 
-As pointed out in section \ref{bilayer_theory}, bilayer \wse has an indirect band gap and most of the weaker \pl can be attributed to the decay of momentum-indirect excitons. 
+As pointed out in section \ref{bilayer_theory}, bilayer \wse has an indirect band gap and most of the weaker \pl can be attributed to the decay of momentum-indirect excitons. It makes sense, that the lowest lying excitonic states $Q\Gamma$ and $QK$ have the highest population and that teir phonon sidebands therefore have the highest intensity in the spectrum. The zero-phonon line (\textsc{zpl}) that corresponds to the energy of the state cannot be seen in the spectrum. Determining their position works analogously to the monolayer by inferring it from the energy of their assumed sidebands. The phonon energies in this case are assumed to be the same as in the monolayer (see \ref{phonon_band}). Following \cite{lindlau_role_2017} the two blue-most peaks are identified as  accoustic and optical sidebands of $QK$ respectively. The same is done for the two peaks to the red, corresponding to sidebands from $Q\Gamma$. Because the $Q$ valley is around halfway between $\Gamma$ and $K$ the necessairy quasi-momentum connecting $QK$ and $Q\Gamma$ is very close and their phonon sidebands are constructed with energies of phonon modes in $Q$. To find the \textsc{zpl} with respect to the main exciton transition its weak but clear peak can be fitted for reference. In this case $X$ shifts 36 meV compared to the monolayer part on the same sample. The \textsc{zpl} of $QK$ and $Q\Gamma$ lie around 73 and 103 meV below $X$ respectively.
+
+While this identification fits the observation of four clear features it is easy to notice, that especially the two red-most peaks have a complex substructure. This is most likely the result of higher-order phonon sidebands from $QK$. Energetically the peaks are most close to what would be combinations of one accoustic and optical phonon more to the blue and processes coupling two optical phonon to the red. However, there is a large number of possible combinations and trying to identify specific higher order phonon sidebands in this spectrum is rather speculative and not unambiguous.
+
+To compare these lines to the possible phonon sidebands of the monolayer this sample was also analyzed at a high negative magnetic field. Because taking spectra of bilayer samples demands longer integration times only one data-point was taken, which makes quantifying the uncertainty of the $g$-factor harder, but gives a rough comparison. All $g$-factors are listed in table \ref{horsepoop}. The peaks can be fitted with an asymmetric lorentzian as well, that can account for the high asymmetry due to their blue shoulder. This shape might seem strange at first, but makes sense, when comparing the \pl of a \wse bilayer with other indirect band gap semiconductors \cite{pelant_luminescence_2012}. In contrast to single photon process that is only possible if the exciton has no net momentum, all momentum-indirect excitons, whose kinetic energy is distributed thermally can decay radiatively and contribute to their spectral line. This becomes even more clear when looking at the intensity of the peaks when applying a magnetic field (see figure \ref{bilayerthermal}). The exciton population is pumped at the 2s-resonance. As the lines split because of the valley Zeeman effect, these states decay into lower lying momentum-indirect excitons according to Boltzman statistics. As seen in the graph, the intensity of the higher energy peak of each pair does not exceed the intensity of the lower one, whose exponential flank acts as an envelope for both populations. The band gap minus the exciton binding energy marks the lowest possible energy, which cuts off the peak at its maximum. This behavior is very different from the monolayer, where also the phonon sideband peaks have a similar lineshape as single-phonon peaks like the neutral exciton and trion. Also their intensity ratio does not change as significantly when the lines split in magnetic field and see a raised intensity in the high energy peaks. This behaviour has been observed before and its origin remains an open question\cite{koperski_optical_2017}.
+
+The tuning to the negative regime is another useful comparison between mono- and bilayer \wse (see figure \ref{bilayervoltsweep}). At a high negative voltage the behavior is quite similar in that at a certain point the spectral lines loose intensity and reappear redshifted by the trion binding energy. The sample used for this measurement unfortunately was destroyed after the voltage was set to high. Nevertheless this "jump" can be seen clearly for the $Q\Gamma_A$ peak---corresponding to accoustic sidebands of $Q\Gamma$---whose trion counterpart appears red to $Q\Gamma_O$. Despite the bad signal-to-noise ratio there are also signature of an onset of trion counterparts of the peaks to the blue. However, a fresh sample with better gate-tunability might reveal the transition to a charged regime more clearly. 
