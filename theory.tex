@@ -96,24 +96,42 @@ Phonon sidebands appear as a peak redshifted by these energy values. For $K'$-in
 
 \section{The valley zeeman effect}\label{zeeman}
 
-\begin{figure}[t]
-\centering
-\begin{subfigure}{0.99\textwidth}
-	\begin{tikzpicture}
-	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{valleyzeeman}};
-	\node at (60pt, 160pt) {$E_S$};
-	\node at (140pt, 105pt) {$E_S$};
-	\node at (26pt, 160pt) {$E_{\mathrm{orb}}$};
-	\node at (340pt, 70pt) {$E_S$};
-	\node at (390pt, 155pt) {$E_S$};
-	\node at (390pt, 70pt) {$E_{\mathrm{orb}}$};
-	\node at (253pt, 200pt) {$K$};
-	\node at (165pt, 200pt) {$Q$};
+%\begin{figure}[t]
+%\centering
+%\begin{subfigure}{0.99\textwidth}
+%	\begin{tikzpicture}
+%	\node[above right] (img) at (0,0) {\includegraphics[width=\textwidth]{valleyzeeman}};
+%	\node at (60pt, 160pt) {$E_S$};
+%	\node at (140pt, 105pt) {$E_S$};
+%	\node at (26pt, 160pt) {$E_{\mathrm{orb}}$};
+%	\node at (340pt, 70pt) {$E_S$};
+%	\node at (390pt, 155pt) {$E_S$};
+%	\node at (390pt, 70pt) {$E_{\mathrm{orb}}$};
+%	\node at (253pt, 200pt) {$K$};
+%	\node at (165pt, 200pt) {$Q$};
+%
+%	\end{tikzpicture}
+%\end{subfigure}
+%\caption{Diagram of orbital and spin contributions to the valley Zeeman effect. For excitons with parallel spin, the corresponding shift $E_S$ of conduction and valence band cancels out. The shift for the direct spin-like exciton therefore depends mostly on the magnetic shift of the orbitals $E_{\mathrm{orb}}$ that at the $K$ point is non-vanishing only in the valence band. The spin-unlike direct exciton however has a strong spin contributioin which in theory doubles its $g$-factor. For momentum-indirect excitons in $Q$ the $g$-factor almost entirely due to the difference in effective mass between hole and electron, because both $E_S$ and $E_{\mathrm{orb}}$ shift in the same direction in the conduction and valence band.}
+%	\label{flakes}
+%\end{figure}
+
+\begin{figure}
+	%\centering
+	\resizebox{!}{70pt}{%
+	\begin{tikzpicture}[scale=0.32, every node/.append style={transform shape}]
+	\begin{circuitikz}
+		\draw (0, 0) parabola (4, 4);
+		\draw (0, 0) parabola (-4, 4);
+		\draw (10, 0) parabola (6, 4);
+		\draw (10, 0) parabola (14, 4);
+		\draw[line width=1mm, dash pattern=on 8pt off 6pt] (10, -2) parabola (6, 1.5);
+		\draw[line width=1mm, dash pattern=on 8pt off 6pt] (10, -2) parabola (14, 1.5);
+	\end{circuitikz}
 
 	\end{tikzpicture}
-\end{subfigure}
-\caption{Diagram of orbital and spin contributions to the valley Zeeman effect. For excitons with parallel spin, the corresponding shift $E_S$ of conduction and valence band cancels out. The shift for the direct spin-like exciton therefore depends mostly on the magnetic shift of the orbitals $E_{\mathrm{orb}}$ that at the $K$ point is non-vanishing only in the valence band. The spin-unlike direct exciton however has a strong spin contributioin which in theory doubles its $g$-factor. For momentum-indirect excitons in $Q$ the $g$-factor almost entirely due to the difference in effective mass between hole and electron, because both $E_S$ and $E_{\mathrm{orb}}$ shift in the same direction in the conduction and valence band.}
-	\label{flakes}
+	}
+	\caption{}
 \end{figure}
 
 A splitting of spectral lines in presence of a magnetic field has been studied for over a hundred years and is called the Zeeman effect, named after the scientist first measuring it in the spectral lines of sodium. The shift of different energy levels in an atom is a result of the magnetic moment of the state, caused by its orbital angular momentum and spin. Solid crystals are essentially large ensembles of atoms that merge atomic orbitals to form the electronic band structure, that can shift in a magnetic field just as orbitals of single atoms. The 2\textsc{d}-nature of \tmdg monolayers and their broken degeneracy of the $K$ and $K'$ point gives rise to a meta-phenomenon called the ``valley Zeeman effect'', that leads to a shift in the band gap energy that is different for both valleys, leading to a split of spectral lines with different circular polarization\cite{srivastava_valley_2015, aivazian_magnetic_2015}. In the vicinity of the $K$ point the band structure is dominated by the large $d$-orbitals of the transition metal atoms. The hybridized $d_{x^2-y^2} \pm id_{xy}$ orbitals give the valence band an oribtal angular momentum along $z$ of $l_z=2\hbar$ that leads to a magnetic dipole moment of $\mu_{K,orb}=2\mu_B$. The conduction band is primarily formed by the $d_{z^2}$-orbital that has no out-of-plane angular momentum and therefore no magnetic moment along $z$. This leads to an asymmetric shift in the conduction and valence band and therefore to a shift of the band gap energy. The \tmd-geometry confines electron movement to the 2\textsc{d} plane, forcing the magnetic moment to either point upwards or downwards out of plane. This direction is exactly opposite at the $K$ and $K'$ points, shifting the valence band energy, and thus the band-gap in opposite directions. The total orbital magnetic moment at $K$ has a value of $\mu_{K,orb}=2\mu_B$. For the bright spin-like exciton transition the this leads to a valley splitting of $\Delta_{K,K'}=4\mu_BB_z$. The prefactor in this equation is often called the $g$-factor and is given in units of the Bohr magneton $\mu_B=e\hbar/2m_e$. As it turns out, this first simple result is already in good agreement with experimental studies (see chapter \ref{spectroscopy}). However, the main reason for this are that other contributions are small or cancel each other out, which is not generally the case. The main additional contributions are the spin of electron and hole and their respective effective masses. %For excitons that only involve charge carriers at the $K$ or $K'$ point, 
