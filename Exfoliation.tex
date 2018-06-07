@@ -35,7 +35,7 @@ The mechanical exfoliation process---often referred to as the ``scotch tape meth
 
 To prepare monolayer flakes for the assembly of more complex devices, they first have to be transferred onto a suitable substrate. A standard substrate is silicon with a layer of thermal oxide that in our case is between 50 and 90 nm thick. Before wafers of this material are brought in contact with the exfoliation tapes they are cleaned both in acetone and isopropanole before being exposed to oxygen plasma for 180 seconds. This ensures a clean surface and maximizes the material that sticks to the wafer \cite{pizzocchero_hot_2016}. To release the tape, the substrate is heated to 85°C and kept at that temperature for at least 2 minutes. After cooling down the tape can be peeled off and the wafer is inspected for with an optical microscope. As seen in figure \ref{flakes}, this process yields a large number of flakes with different sizes and thicknesses on the substrate. It is likely to find at least one suitable monolayer sample on a typical \si-substrate (10 mm by 10 mm). 
 
-\subsection{Layer number}
+\section{Layer number}
 
 \begin{figure}
 	\centering
@@ -96,9 +96,9 @@ A gate-tunable \tmd-device can be understood as simple capacitor. A gate voltage
 	\label{pattern}
 \end{figure}
 
-To contact microscopic structures like \tmd-monolayers, electrodes have to be fabricated using micro-lithography. \textsc{Tmd} monolayers---either \textsc{cvd}-grown or exfoliated---are scattered on their substrates randomly. Therefore it is a common practice to fabricate electrodes directly on top of the sample via e-beam or laser lithography  \cite{wang_electronic_2015, fallahazad_shubnikovhaas_2016}. Samples encapsulated in \hbng usually feature one or more additional films of graphene that provide an ohmic contact outside the heterostructure. Since only one contact is sufficient for charge-tunability, the process can be simplified greatly. Instead of writing electrodes after transfer, contacts are fabricated on the bare substrate. The encapsulated \hbn-\tmd-heterostructure can be contacted by dropping it on the edge of the gold structure. Most of the time, more \tmd-material than the monolayer is picked up during the transfer process. Because a \tmd-gold interface is conducting even at very low temperatures, these flakes provide suitable contacts, that do not have to be encapsulated in \hbn, therefore replacing additional graphene electrodes. Gold patterns are fabricated in contact lithography using a chromium mask that is deposited on glass. Since the stack can be dropped at any point on the substrate, the shape of the gold structure is unimportant, as long as it is large and connected. Therefore not even a new lithographic mask had to be fabricated. Instead a suitable mask was chosen from old pre-used structures. Even defects and deterioration of the masks only manifests aesthetically, rendering this process very robust and ideal for batch fabrication of gate-structures. The recipe starts with spin coating positive \textsc{az} 701 photoresist on a \si/\sio wafer. Using a maskaligner, the wafer is brought in contact with the chromium mask before exposing it to \textsc{uv}-light for 18 seconds. After that, the pattern is developed using \textsc{az} 826 \textsc{mif} developer, that washes out the exposed photoresist.
+To contact microscopic structures like \tmd-monolayers, electrodes have to be fabricated using micro-lithography. \textsc{Tmd} monolayers---either \textsc{cvd}-grown or exfoliated---are scattered on their substrates randomly. Therefore it is a common practice to fabricate electrodes directly on top of the sample via e-beam or laser lithography  \cite{wang_electronic_2015, fallahazad_shubnikovhaas_2016}. Samples encapsulated in \hbng usually feature one or more additional films of graphene that provide an ohmic contact outside the heterostructure. Since only one contact is sufficient for charge-tunability, the process can be simplified greatly. Instead of writing electrodes after transfer, contacts are fabricated on the bare substrate. The encapsulated \hbn-\tmd-heterostructure can be contacted by dropping it on the edge of the gold structure. Most of the time, more \tmd-material than the monolayer is picked up during the transfer process. Because a \tmd-gold interface is conducting even at very low temperatures, these flakes provide suitable contacts, that do not have to be encapsulated in \hbn, therefore replacing additional graphene electrodes. Gold patterns are fabricated in contact lithography using a chromium mask that is deposited on glass. Since the stack can be dropped at any point on the substrate, the shape of the gold structure is unimportant, as long as it is large and connected. Therefore not even a new lithographic mask had to be fabricated. Instead a suitable mask was chosen from old pre-used structures. Even defects and deterioration of the masks only manifests aesthetically, rendering this process very robust and ideal for batch fabrication of gate-structures. The recipe starts with spin coating positive \textsc{az} 701 photoresist on a \si/\sio wafer at 4000 rpm. Using a maskaligner, the wafer is brought in contact with the chromium mask before exposing it to \textsc{uv}-light for 18 seconds. After that, the pattern is developed using \textsc{az} 826 \textsc{mif} developer, that washes out the exposed photoresist.
 
-In the next step the sample is coated in an X-ray evaporation system. First, a 1--5 nm film of titanium is deposited on the substrate, that acts as a bonding agent. Subsequently a 50nm film of gold is deposited on top. After removing the sample from the vacuum chamber the structures are finished in the so called ``lift-off''. The substrate is simply suspended in a solvent like acetone, that dissolves residual photoresist, only leaving gold, deposited in the developed structures. To speed up the lift-off process the sample can be placed in an ultrasonic cleaner at a low power. The resulting structure can be seen in figure \ref{pattern}. 
+In the next step the sample is coated in an X-ray evaporation system. First, a 1--5 nm film of titanium is deposited on the substrate, that acts as a bonding agent. Subsequently a 50 nm film of gold is deposited on top. After removing the sample from the vacuum chamber the structures are finished in the so called ``lift-off''. The substrate is simply suspended in a solvent like acetone, that dissolves residual photoresist, only leaving gold, deposited in the developed structures. To speed up the lift-off process the sample can be placed in an ultrasonic cleaner at a low power. The resulting structure can be seen in figure \ref{pattern}. 
 
 \subsection{Back gate electrodes}
 
@@ -172,8 +172,40 @@ This process can be very violent to the sample. Gold droplets can splash over a 
 \begin{subfigure}{0.49\textwidth}
 	\includegraphics[width=\textwidth]{stamp_gh}
 \end{subfigure}
-\caption{Stamping process: "Hot pick-up and stamping" is based on strong van-der-Waals forces between \hbng and \tmds as well as the control of adhesion between \textsc{ppc} and \hbng using temperature. Flakes of \hbng are picked up from a \si/\sio substrate at 50 °C and can be dropped at a temperature around 110 °C, when the \textsc{ppc} film on the \textsc{pdms} block loses viscosity. Because thin \tmdg flakes like mono- and bilayers adhere to \hbng much better than to their substrate, the pick-up is highly reliable and arbitrarily high heterostructures can be built. To establish an electrical contact to a layer of the stack, part of it has to lay free, facing down. In this configuration the stack is simply dropped on the edge of the gold structure.}
+\caption{Stamping process: "Hot pick-up and stamping" is based on strong van-der-Waals forces between \hbng and \tmds as well as the control of adhesion between \textsc{ppc} and \hbng using temperature. Flakes of \hbng are picked up from a \si/\sio substrate at 50 °C (\textbf{A}, \textbf{B}, \textbf{D}, \textbf{F}) and can be dropped at a temperature around 110 °C, when the \textsc{ppc} film on the \textsc{pdms} block loses viscosity (\textbf{C}, \textbf{E}, \textbf{G}, \textbf{H}). Because thin \tmdg flakes like mono- and bilayers adhere to \hbng much better than to their substrate, the pick-up is highly reliable and arbitrarily high heterostructures can be built. To establish an electrical contact to a layer of the stack, part of it has to lay free, facing down. In this configuration the stack is simply dropped on the edge of the gold structure.}
 	\label{stamping}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\begin{subfigure}{0.4\textwidth}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\includegraphics[height=0.75\textwidth]{full_device_zoom}};
+	\draw[color=white, thick] (150pt, 70pt) 
+				       -- (120pt, 60pt) 
+				       -- (91pt, 64pt) 
+				       -- (105pt, 77pt) 
+				       -- (77pt, 82pt)
+				       -- (85pt, 90pt)
+				       -- (107pt, 89pt)
+				       -- (150pt, 70pt);
+	\draw[color=white] (20pt, 20pt) -- (60pt, 20pt);
+	\node[color=white] at (40pt, 12pt) {\textbf{20\mu m}};
+	\node[color=white] at (90pt, 52pt) {{\large \textbf{ML/BL}}};
+	\end{tikzpicture}
+
+\end{subfigure}
+\begin{subfigure}{0.4\textwidth}
+	\caption{}
+	\begin{tikzpicture}
+	\node[above right] (img) at (0,0) {\includegraphics[height=0.75\textwidth]{finished}};
+	\draw[color=black] (120pt, 20pt) -- (160pt, 20pt);
+	\node[color=black] at (140pt, 12pt) {\textbf{9mm}};
+	\end{tikzpicture}
+\end{subfigure}
+\caption{\textbf{A} Finished sample of both mono- and bilayer \wse\!. Most of it is encapsulated between two flakes of \hbng. To establish electrical contact part of the \tmdg material has to be in mechanical contact with the gold structure which is seen on the right. \textbf{B} Finished sample mounted onto a chip-carrier made of titanium. The top-gate is contacted by gluing a thin wire to the gold structure on the surface with conductive silver paste. The backgate contacts are contacted in the same manner by gluing wires to the points where gold was deposited during the arc discharge. These thin wires are mounted on conducting pads on which thicker wires are soldered.}
+	\label{pattern}
 \end{figure}
 
 The mechanical exfoliation method is popular also for its synergy with dry transfer methods. \textsc{Cvd}-grown \tmd-flakes are grown on suitible substrates and can be transferred to  a target substrate using a variation of wet methods, that involve powerful solvents or a combination of solvents and polymer films to lift the grown flakes off their initial substrate  \cite{li_universal_2014}. The advantage of the exfoliation method is that flakes can be put on any substrate directly from the adhesive tape and do not encounter potentially damaging chemicals. This led to the invention of ``viscoelastic stamping'', where the \tmd-material is exfoliated on a substrate of viscoelastic polymer called polydimethylsiloxane (\textsc{pdms}) \cite{castellanos-gomez_deterministic_2014}. This so called ``stamp'' can be brought in contact with the target substrate and peeled off carefully to drop down the flake at a desired position, opening up the possibility of producing carefully designed van-der-Waals heterostructures deterministically.
@@ -192,7 +224,7 @@ The last step is to transfer the whole stack to its final position in contact wi
 
 Despite the strong plasma treatment of the \textsc{pdms}-stamp in some cases the \textsc{ppc} can peel off during the drop down part of the transfer due to high heat as the polymer becomes ever more liquid. In this case the sample can be carefully treated in a bath of acetone, which dissolves the polymer rapidly. The sample should stay in the bath for around one minute without any mechanical stress. Afterwards it has to be cleaned in isopropanole and blown dry with nitrogen gas. 
 
-\subsection{Annealing}
+\section{Annealing}
 
 While the hot pick-up should in theory ensure a \hbn-\tmdg interface free of contamination, especially contamination due to humidity in the ambient air can remain between the layers and seriously lower the quality of the sample. To remove this pollution, the sample can be annealed \cite{lin_graphene_2012}. During annealing, the sample is placed in an annealing oven. While maintaining a high vacuum of 10$^{-3}$ mbar, the oven heats the sample to 250°C for three hours. The vacuum ensures that any volatile materials like water vapor dissipate, while the high temperature increases the mobility of water and eventual polymer contamination on the surface. While not all dirt completely evaporates, the annealing procedure results in the formation of tiny bubbles, so that most of the interface remains clean while all dirt packs at a few avoidable places. Other recipes, that use higher or lower temperatures or longer annealing times can work just as well. Water contamination from the ambient air is still the biggest concern, so even mild temperatures should have a clear advantage over not performing the annealing-step at all. 
 More aggressive recipes, that work at higher temperatures or for longer times can be more effective regarding polymer contaminations that arise from contact to the stamp. If the sample had to be freed of the residual \textsc{ppc} layer with acetone, contamination with polymer molecules is possible. When this exposure can be avoided however, raising the temperature has a limited advantage over milder annealing conditions, but raises also the risk of damaging the sample through temperature induced strain, that can potentially rip the \tmdg flakes. 
